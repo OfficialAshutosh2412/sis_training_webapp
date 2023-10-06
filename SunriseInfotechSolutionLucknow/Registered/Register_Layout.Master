@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Register_Layout.master.cs" Inherits="SunriseInfotechSolutionLucknow.Registered.Register_Layout" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../res/media/favicon/WhatsApp-Image-2023-09-27-at-00.28.21.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="../res/css/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="loading()" style="background:#242424;color:#f1f1f1" >
+    <form id="form1" runat="server">
+        <%--preloader--%>
+        <div class="preloader" id="preloader"><div class="colorful"></div></div>
+        <%--navbar--%>
+        <nav class="navbar navbar-expand-xxl">
+            <div class="container-fluid">
+                <asp:Hyperlink runat="server"  CssClass="navbar-brand nav-img" NavigateUrl="~/Registered/Userhome.aspx" style="cursor:pointer"><img src="../res/media/img/WhatsApp%20Image%202023-09-27%20at%2000.28.21.jpg" /><label  style="cursor:pointer" class="brand-name">Sunrise Infotech Solution</label></asp:Hyperlink>
+                <label class="icon bg-light" id="icon">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <div class="collapse navbar-collapse justify-content-end small_nav" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <asp:HyperLink NavigateUrl="~/Registered/Userhome.aspx" runat="server" CssClass="nav-link"><i class="fa-solid fa-house"></i> Home</asp:HyperLink>
+                        </li>
+                        <li class="nav-item">
+                            <asp:HyperLink NavigateUrl="~/Registered/Profile.aspx" runat="server" CssClass="nav-link"><i class="fa-solid fa-id-badge"></i> Profile</asp:HyperLink>
+                        </li>
+                        <li class="nav-item">
+                            <asp:Hyperlink runat="server" NavigateUrl="~/Registered/Certificate.aspx" CssClass="nav-link"><i class="fa-solid fa-award"></i> Certificates</asp:Hyperlink>
+                        </li>
+                        <li class="nav-item">
+                            <asp:HyperLink NavigateUrl="~/Registered/Feedback.aspx" runat="server" CssClass="nav-link"><i class="fa-solid fa-hand-holding-heart"></i> Feedback</asp:HyperLink>
+                        </li>
+                        <li class="nav-item">
+                            <asp:Button Text="Logout" runat="server" ValidationGroup="fix" CssClass="nav-link p-2 rounded" style="background:var(--hover-bg);width:fit-content;" OnClick="Unnamed3_Click"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <%--content place holder--%>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <%--footer--%>
+        <section class="footer" id="contact">
+            <div class="social">
+                <h3>Follow us</h3>
+                <div>
+                    <asp:HyperLink NavigateUrl="navigateurl" runat="server">Facebook</asp:HyperLink>
+                    <asp:HyperLink NavigateUrl="navigateurl" runat="server">Twitter</asp:HyperLink>
+                    <asp:HyperLink NavigateUrl="navigateurl" runat="server">Google+</asp:HyperLink>
+                </div>
+            </div>
+            <div class="quick-links">
+                <h3>Contact us</h3>
+                <div>
+                    <asp:Label Text="Email : sunriseinfotechsolutionn@gmail.com" runat="server" />
+                    <asp:Label Text="Call : 7755890555,7267973767" runat="server" />
+                </div>
+            </div>
+            <div class="address">
+                <h3>Find us</h3>
+                <div>
+                    <asp:Label Text="643Ma/288 Mithlesh Sadan Mohibullapur near noubasta pulia p/s Madion" runat="server" />
+                    <asp:Label Text="Sitapur road,Luchnow-226021" runat="server" />
+                </div>
+            </div>
+        </section>
+        <footer class="rights">
+            <asp:Label class="rights" Text="All © reserved by sunriseinfotechsolution @2017 to till date | by DevelopingTeam" runat="server" />
+        </footer>
+    </form>
+
+    <script src="../res/js/js_file.js"></script>
+</body>
+</html>

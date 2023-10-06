@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Landing.master.cs" Inherits="SunriseInfotechSolutionLucknow.Landing" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="icon" href="res/media/favicon/WhatsApp-Image-2023-09-27-at-00.28.21.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="res/css/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background: #242424; color: #f1f1f1" onload="loading()">
+    <form id="form1" runat="server">
+        <%--preloader--%>
+        <div class="preloader" id="preloader"><div class="colorful"></div></div>
+        <%--video-bg--%>
+        <div class="bg-animation">
+            <img src="res/media/img/PngItem_1128687.png" />
+            <img src="res/media/img/PngItem_6859977.png" />
+        </div>
+        <%--navbar--%>
+        <nav class="navbar navbar-expand-xxl ">
+            <div class="container-fluid">
+                <asp:Hyperlink runat="server" CssClass="navbar-brand nav-img" NavigateUrl="~/Home.aspx">
+                    <img src="res/media/img/WhatsApp%20Image%202023-09-27%20at%2000.28.21.jpg" />
+                    Sunrise Infotech Solution</asp:Hyperlink>
+                <label class="icon bg-light" id="icon">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <div class="justify-content-end small_nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <asp:HyperLink NavigateUrl="~/Home.aspx" runat="server" CssClass="nav-link"><i class="fa-solid fa-house"></i> Home</asp:HyperLink>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Home.aspx#about" class="nav-link"><i class="fa-solid fa-circle-info"></i>About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Home.aspx#service" class="nav-link"><i class="fa-solid fa-gears"></i>Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Home.aspx#course" class="nav-link"><i class="fa-solid fa-award"></i>Course</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Home.aspx#gallery" class="nav-link"><i class="fa-solid fa-photo-film"></i>Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Home.aspx#team" class="nav-link"><i class="fa-solid fa-people-group"></i>Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Home.aspx#contact" class="nav-link"><i class="fa-solid fa-at"></i>Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <asp:Hyperlink runat="server" NavigateUrl="~/Help.aspx" CssClass="nav-link"><i class="fa-solid fa-handshake"></i> Help</asp:Hyperlink>
+                        </li>
+                        <li class="nav-item">
+                            <asp:HyperLink NavigateUrl="~/Login.aspx" runat="server" CssClass="nav-link p-2 rounded" style="background:var(--hover-bg);width:fit-content;"><i class="fa-solid fa-right-to-bracket"></i> Login</asp:HyperLink>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <%--content placeholder--%>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer class="rights">
+            <asp:Label class="rights" Text="All © reserved by sunriseinfotechsolution @2017 to till date | by DevelopingTeam" runat="server" />
+        </footer>
+    </form>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="res/js/js_file.js"></script>
+</body>
+</html>

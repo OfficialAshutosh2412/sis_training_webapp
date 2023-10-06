@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminLayout.master.cs" Inherits="SunriseInfotechSolutionLucknow.Admin.AdminLayout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../res/media/favicon/WhatsApp-Image-2023-09-27-at-00.28.21.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="../res/css/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background:#092533;color:#dcdcdc">
+    <form id="form1" runat="server">
+        <i class="fa-solid fa-gear fa-spin" style="position:fixed;z-index:-10;font-size:30rem;right:-300px;bottom:0"></i>
+        <%--navbar--%>
+        <nav class="navbar navbar-expand-lg" style="background:#09696c">
+            <div class="container-fluid">
+                <asp:Hyperlink runat="server"  CssClass="navbar-brand nav-img" NavigateUrl="~/Admin/Admin_home.aspx" style="cursor:pointer"><img src="../res/media/img/WhatsApp%20Image%202023-09-27%20at%2000.28.21.jpg" /><label  style="cursor:pointer" class="brand-name">Sunrise Infotech Solution</label></asp:Hyperlink>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <asp:HyperLink NavigateUrl="~/Admin/Admin_home.aspx" runat="server" CssClass="nav-link"><i class="fa-solid fa-house"></i> Home</asp:HyperLink>
+                        </li>
+                        <li class="nav-item">
+                            <asp:HyperLink NavigateUrl="~/Admin/Admin_status.aspx" runat="server" CssClass="nav-link"><i class="fa-solid fa-chart-simple"></i> Status</asp:HyperLink>
+                        </li>
+                        <li class="nav-item">
+                            <asp:Hyperlink runat="server" NavigateUrl="~/Admin/Admin_certificate.aspx" CssClass="nav-link"><i class="fa-solid fa-award"></i> Certificates</asp:Hyperlink>
+                        </li>
+                        <li class="nav-item">
+                            <asp:Hyperlink runat="server" NavigateUrl="~/Admin/Admin-help.aspx" CssClass="nav-link"><i class="fa-solid fa-handshake"></i> Help</asp:Hyperlink>
+                        </li>
+                        <li class="nav-item">
+                            <asp:Button Text="Logout" runat="server" ValidationGroup="fix" CssClass="nav-link p-2 text-light rounded" style="background:var(--hover-bg)" OnClick="Unnamed6_Click" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer style="background:#09696c;" class="p-3 text-center">
+            All Rights are Reserved &copy;SIS 2023
+        </footer>
+    </form>
+</body>
+</html>

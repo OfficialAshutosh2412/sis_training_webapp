@@ -1,0 +1,335 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86A809CF-E893-422C-8B9B-19261D131F64}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SunriseInfotechSolutionLucknow</RootNamespace>
+    <AssemblyName>SunriseInfotechSolutionLucknow</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44375</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Admin\Admin-help.aspx" />
+    <Content Include="Admin\Admin_certificate.aspx" />
+    <Content Include="Admin\Admin_home.aspx" />
+    <Content Include="Admin\Admin_status.aspx" />
+    <Content Include="Admin\Certificate_Images\preview.png" />
+    <Content Include="Admin\Records.aspx" />
+    <Content Include="App_Data\sunriseInfotechSolution.mdf" />
+    <Content Include="App_Data\sunriseInfotechSolution_log.ldf">
+      <DependentUpon>sunriseInfotechSolution.mdf</DependentUpon>
+    </Content>
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="Help.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Programs.aspx" />
+    <Content Include="Registered\Certificate.aspx" />
+    <Content Include="Registered\Feedback.aspx" />
+    <Content Include="Registered\EditProfile.aspx" />
+    <Content Include="Registered\Profile.aspx" />
+    <Content Include="Registered\Userhome.aspx" />
+    <Content Include="res\css\style.css" />
+    <Content Include="res\js\js_file.js" />
+    <Content Include="res\media\favicon\WhatsApp-Image-2023-09-27-at-00.28.21.ico" />
+    <Content Include="res\media\icons\check-mark.png" />
+    <Content Include="res\media\icons\check.png" />
+    <Content Include="res\media\icons\close.png" />
+    <Content Include="res\media\icons\delete.png" />
+    <Content Include="res\media\icons\edit.png" />
+    <Content Include="res\media\img\1 %282%29.jpg" />
+    <Content Include="res\media\img\1.jpg" />
+    <Content Include="res\media\img\2 %282%29.jpg" />
+    <Content Include="res\media\img\2.jpg" />
+    <Content Include="res\media\img\20190708_002647.png" />
+    <Content Include="res\media\img\3 %282%29.jpg" />
+    <Content Include="res\media\img\3.jpg" />
+    <Content Include="res\media\img\4 %281%29.jpg" />
+    <Content Include="res\media\img\4.jpg" />
+    <Content Include="res\media\img\5 %281%29.jpg" />
+    <Content Include="res\media\img\5.jpg" />
+    <Content Include="res\media\img\6.jpg" />
+    <Content Include="res\media\img\7.jpg" />
+    <Content Include="res\media\img\asp.jpg" />
+    <Content Include="res\media\img\bigdata.png" />
+    <Content Include="res\media\img\cakephp.jpg" />
+    <Content Include="res\media\img\developer.jpg" />
+    <Content Include="res\media\img\director.jpg" />
+    <Content Include="res\media\img\ethical.jpg" />
+    <Content Include="res\media\img\java.png" />
+    <Content Include="res\media\img\jsp.png" />
+    <Content Include="res\media\img\matlab.jpg" />
+    <Content Include="res\media\img\mentor 1.jpg" />
+    <Content Include="res\media\img\PngItem_1128687.png" />
+    <Content Include="res\media\img\PngItem_6859977.png" />
+    <Content Include="res\media\img\pngwing.com.png" />
+    <Content Include="res\media\img\python.png" />
+    <Content Include="res\media\img\WhatsApp Image 2023-09-27 at 00.28.21.jpg" />
+    <Content Include="res\media\img\wordpress.png" />
+    <Content Include="res\media\video\Untitled.mp4" />
+    <Content Include="res\media\video\[FREE - HDconvert.com] abstract_-_66480 %28540p%29.mp4" />
+    <Content Include="Signup.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin-help.aspx.cs">
+      <DependentUpon>Admin-help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin-help.aspx.designer.cs">
+      <DependentUpon>Admin-help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminLayout.Master.cs">
+      <DependentUpon>AdminLayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminLayout.Master.designer.cs">
+      <DependentUpon>AdminLayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_certificate.aspx.cs">
+      <DependentUpon>Admin_certificate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_certificate.aspx.designer.cs">
+      <DependentUpon>Admin_certificate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_home.aspx.cs">
+      <DependentUpon>Admin_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_home.aspx.designer.cs">
+      <DependentUpon>Admin_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_status.aspx.cs">
+      <DependentUpon>Admin_status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_status.aspx.designer.cs">
+      <DependentUpon>Admin_status.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Records.aspx.cs">
+      <DependentUpon>Records.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Records.aspx.designer.cs">
+      <DependentUpon>Records.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionStringFile.cs" />
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Landing.Master.cs">
+      <DependentUpon>Landing.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Landing.Master.designer.cs">
+      <DependentUpon>Landing.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs.aspx.cs">
+      <DependentUpon>Programs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs.aspx.designer.cs">
+      <DependentUpon>Programs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registered\Certificate.aspx.cs">
+      <DependentUpon>Certificate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registered\Certificate.aspx.designer.cs">
+      <DependentUpon>Certificate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registered\Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registered\Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registered\EditProfile.aspx.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registered\EditProfile.aspx.designer.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registered\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registered\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registered\Register_Layout.Master.cs">
+      <DependentUpon>Register_Layout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registered\Register_Layout.Master.designer.cs">
+      <DependentUpon>Register_Layout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Registered\Userhome.aspx.cs">
+      <DependentUpon>Userhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registered\Userhome.aspx.designer.cs">
+      <DependentUpon>Userhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.aspx.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signup.aspx.designer.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Landing.Master" />
+    <Content Include="Admin\AdminLayout.Master" />
+    <None Include="packages.config" />
+    <Content Include="res\media\files\sunfinal.pdf" />
+    <Content Include="res\media\files\C FAQ.pdf" />
+    <Content Include="res\media\files\ASCII Chart and Other Resources.pdf" />
+    <Content Include="Registered\Register_Layout.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="profileFolder\" />
+    <Folder Include="Registered\Docs\Adhaar\" />
+    <Folder Include="Registered\Docs\PPS\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56316</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44375/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
