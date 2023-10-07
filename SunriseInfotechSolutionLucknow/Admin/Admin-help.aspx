@@ -19,7 +19,7 @@
                 <asp:TextBox ID="asnwer" runat="server"></asp:TextBox>
             </div>
         </div>
-        <divclass="form-item mt-3" style="width: fit-content">
+        <div class="form-item mt-3" style="width: fit-content">
             <div class="form-item">
                 <asp:Button ID="Button1" runat="server" Text="Upload it!"  CssClass="submit p-2 rounded" style="background:var(--hover-bg);width:fit-content;" OnClick="Button1_Click"/>
                 <asp:ValidationSummary ID="ValidationSummary1" runat="server" CssClass="d-none" ShowMessageBox="True" />

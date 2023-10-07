@@ -45,9 +45,7 @@
                     <li>A curriculum that is highly relevant to your future work</li>
                 </ul>
                 <h5 class="text-info">Training For CS/IT Students: </h5>
-                <p>
-                    Computer Science/Information technology is a challenging, thrilling and an emerging field that has impacted our day to day life. The applications of CS/IT field can range from fields like business, science and communication. At CETPA, we have a plethora of CS/IT related courses that will fulfill all your requirements to be a well groomed CS/IT professional. All the courses at CETPA are well structured consisting of latest updated syllabus covered by expert trainers to guide you to success
-                </p>
+                <p>Computer Science/Information technology is a challenging, thrilling and an emerging field that has impacted our day to day life. The applications of CS/IT field can range from fields like business, science and communication. At CETPA, we have a plethora of CS/IT related courses that will fulfill all your requirements to be a well groomed CS/IT professional. All the courses at CETPA are well structured consisting of latest updated syllabus covered by expert trainers to guide you to success</p>
             </div>
         </div>
         <div class="about-flex">
@@ -99,9 +97,7 @@
         </div>
         <div class="about-sections">
             <h5 class="text-info">Training For Electronics Students: </h5>
-            <p>
-                f you enjoy mathematics and science, are fascinated by electricity, energy and electronics, and want to invent and design things that benefit society, you may wish to get trained in Electronics Courses. We encourage students to think in innovative ways and challenge existing practice that equips them with the skills and confidence to meet the Industry Trends. Electronic engineering is a fast-moving subject, and we continually revise our training programs and syllabus to reflect both the latest developments in engineering education and the emerging needs of industry.
-            </p>
+            <p>If you enjoy mathematics and science, are fascinated by electricity, energy and electronics, and want to invent and design things that benefit society, you may wish to get trained in Electronics Courses. We encourage students to think in innovative ways and challenge existing practice that equips them with the skills and confidence to meet the Industry Trends. Electronic engineering is a fast-moving subject, and we continually revise our training programs and syllabus to reflect both the latest developments in engineering education and the emerging needs of industry.</p>
             <p>We have special designed technical courses in Electronic Engineering as mentioned below.</p>
             <ul>
                 <li>Embedded System (8085)</li>

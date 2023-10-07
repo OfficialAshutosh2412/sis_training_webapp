@@ -5,6 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section class="signup" style="margin-top:100px;">
         <h1>Signup</h1>
+        <%--row 1--%>
         <div class="forms">
             <div class="form-item">
                 <p>
@@ -25,6 +26,7 @@
                 <asp:TextBox ID="confirmPpassword" runat="server"></asp:TextBox>
             </div>
         </div>
+        <%--row 2--%>
         <div class="forms">
             <div class="form-item">
                 <p>
@@ -49,6 +51,7 @@
                 <asp:TextBox ID="college" runat="server"></asp:TextBox>
             </div>
         </div>
+        <%--row 3--%>
         <div class="forms" >
             <div class="form-item" runat="server" ID="courseDiv">
                 <p>
@@ -66,6 +69,7 @@
                 <asp:TextBox ID="address" runat="server"></asp:TextBox>
             </div>
         </div>
+        <%--row 4--%>
         <div class="forms">
             <div class="form-item" runat="server" ID="techDiv">
                 <p>
@@ -82,6 +86,7 @@
                 </asp:DropDownList>
             </div>
         </div>
+        <%--row 5--%>
         <div class="forms">
             <div class="form-item">
                 <p>
@@ -100,6 +105,7 @@
                 <asp:TextBox ID="joindate" runat="server" TextMode="DateTimeLocal"></asp:TextBox>
             </div>
         </div>
+        <%--button--%>
         <div class="forms">
             <div class="form-item">
                 <asp:Button ID="Button1" runat="server" Text="Submit now !" CssClass="submit p-2 rounded" style="background:var(--hover-bg);width:fit-content;" OnClick="Button1_Click" /> <asp:Button ID="adminBtn" runat="server" Text="singup as admin now !" CssClass="submit mt-3" Visible="False" OnClick="AdminBtn_Click" style="width:fit-content" />

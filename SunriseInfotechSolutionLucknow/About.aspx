@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <%--box1--%>
     <section class="about-sections" style="margin-top:5%">
         <h1 class=" text-center m-3 fw-lighter">About us</h1>
         <p class="justify">
@@ -16,6 +17,7 @@
         </ul>
         <asp:HyperLink NavigateUrl="~/res/media/files/sunfinal.pdf" runat="server" cssclass="text-info"><i class="fa-solid fa-download"></i> Download Brochure</asp:HyperLink>
     </section>
+    <%--box2--%>
     <section class="about-sections">
         <h3 class="bg-body-secondary text-body-tertiary p-4 rounded">Started as a Project Training organization,we are proud to have gained trust of more then 9000 Students till now</h3>
         <h6>Today,Sunrise Infotech Solution majorly deals in:</h6>
@@ -25,6 +27,7 @@
             <li>Professional Education and Technology based training..</li>
         </ul>
     </section>
+    <%--box3--%>
     <div class="about-sections about-flex">
         <section class="about-sections " style="text-align: justify; width:100%; margin-left: 0;">
             <p>
@@ -39,6 +42,7 @@
         <p>Registered students can also submit ticket from Student Examination.</p>
         </section>
     </div>
+    <%--box4--%>
     <section class="text-light" style="text-align:justify">
         <h2 class="bg-danger  text-center p-5">
             Contact Timings : 9:00 AM To 11:00 PM 

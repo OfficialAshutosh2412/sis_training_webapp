@@ -99,5 +99,4 @@
             <asp:HyperLink NavigateUrl="~/Admin/Records.aspx" CssClass="counterbtn" runat="server" ID="HyperLink7"><i class="fa-solid fa-angle-right"></i></asp:HyperLink>
         </div>
     </section>
-    
 </asp:Content>

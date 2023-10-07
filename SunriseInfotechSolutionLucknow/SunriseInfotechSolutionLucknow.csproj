@@ -89,6 +89,7 @@
     <Content Include="Registered\Profile.aspx" />
     <Content Include="Registered\Userhome.aspx" />
     <Content Include="res\css\style.css" />
+    <Content Include="res\css\style.min.css" />
     <Content Include="res\js\js_file.js" />
     <Content Include="res\media\favicon\WhatsApp-Image-2023-09-27-at-00.28.21.ico" />
     <Content Include="res\media\icons\check-mark.png" />

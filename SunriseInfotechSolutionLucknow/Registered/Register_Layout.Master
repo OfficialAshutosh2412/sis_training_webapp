@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="../res/css/style.css" rel="stylesheet" />
+    <link href="../res/css/style.min.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -25,9 +25,11 @@
         <nav class="navbar navbar-expand-xxl">
             <div class="container-fluid">
                 <asp:Hyperlink runat="server"  CssClass="navbar-brand nav-img" NavigateUrl="~/Registered/Userhome.aspx" style="cursor:pointer"><img src="../res/media/img/WhatsApp%20Image%202023-09-27%20at%2000.28.21.jpg" /><label  style="cursor:pointer" class="brand-name">Sunrise Infotech Solution</label></asp:Hyperlink>
+                <%--menu button--%>
                 <label class="icon bg-light" id="icon">
                     <i class="fa-solid fa-bars"></i> Menu
                 </label>
+                <%--responsive navbar--%>
                 <div class="collapse navbar-collapse justify-content-end small_nav" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -83,6 +85,7 @@
             <asp:Label class="rights" Text="All © reserved by sunriseinfotechsolution @2017 to till date | by DevelopingTeam" runat="server" />
         </footer>
     </form>
+
 
     <script src="../res/js/js_file.js"></script>
 </body>

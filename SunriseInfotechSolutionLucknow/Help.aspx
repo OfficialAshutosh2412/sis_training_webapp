@@ -14,7 +14,6 @@
                                 <asp:Label ID="Label1" runat="server" Text='<%# Bind("Answers") %>'></asp:Label>
                             </div>
                         </div>
-                        
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>

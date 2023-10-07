@@ -8,7 +8,7 @@
         <div class="hero-img" data-aos="zoom-in-up" data-aos-duration="500">
             <img src="res/media/img/20190708_002647.png" />
         </div>
-        <div style="margin-top:-20px;">
+        <div style="margin-top: -20px;">
             <h3 class="title" data-aos="zoom-in-up" data-aos-duration="1500">SUNRISE INFOTECH SOLUTION</h3>
             <h1 class="title" data-aos="zoom-in-up" data-aos-duration="2000"><span>WHERE</span><span> Quality Matters</span></h1>
         </div>
@@ -41,19 +41,19 @@
             </div>
             <div data-aos="fade-up" data-aos-duration="200">
                 <h1>live project training</h1>
-                <asp:HyperLink NavigateUrl="~/Programs.aspx" runat="server" ToolTip="download brochure" ><i class="fa-solid fa-chevron-right"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="~/Programs.aspx" runat="server" ToolTip="download brochure"><i class="fa-solid fa-chevron-right"></i></asp:HyperLink>
             </div>
             <div data-aos="fade-up" data-aos-duration="300">
                 <h1>in house training</h1>
-                <asp:HyperLink NavigateUrl="~/Programs.aspx" runat="server" ToolTip="download brochure" ><i class="fa-solid fa-chevron-right"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="~/Programs.aspx" runat="server" ToolTip="download brochure"><i class="fa-solid fa-chevron-right"></i></asp:HyperLink>
             </div>
             <div data-aos="fade-up" data-aos-duration="300">
                 <h1>recruitment programes</h1>
-                <asp:HyperLink NavigateUrl="~/Programs.aspx" runat="server" ToolTip="download brochure" ><i class="fa-solid fa-chevron-right"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="~/Programs.aspx" runat="server" ToolTip="download brochure"><i class="fa-solid fa-chevron-right"></i></asp:HyperLink>
             </div>
             <div data-aos="fade-up" data-aos-duration="200">
                 <h1>short term courses</h1>
-                <asp:HyperLink NavigateUrl="~/Programs.aspx" runat="server" ToolTip="download brochure" ><i class="fa-solid fa-chevron-right"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="~/Programs.aspx" runat="server" ToolTip="download brochure"><i class="fa-solid fa-chevron-right"></i></asp:HyperLink>
             </div>
             <div data-aos="fade-up" data-aos-duration="100">
                 <h1>mba student training programes</h1>
@@ -61,11 +61,11 @@
             </div>
             <div data-aos="fade-up" data-aos-duration="200">
                 <h1>personality development programes</h1>
-                <asp:HyperLink NavigateUrl="~/Programs.aspx" runat="server" ToolTip="download brochure" ><i class="fa-solid fa-chevron-right"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="~/Programs.aspx" runat="server" ToolTip="download brochure"><i class="fa-solid fa-chevron-right"></i></asp:HyperLink>
             </div>
             <div data-aos="fade-up" data-aos-duration="300">
                 <h1>industrial training</h1>
-                <asp:HyperLink NavigateUrl="~/Programs.aspx" runat="server" ToolTip="download brochure" ><i class="fa-solid fa-chevron-right"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="~/Programs.aspx" runat="server" ToolTip="download brochure"><i class="fa-solid fa-chevron-right"></i></asp:HyperLink>
             </div>
         </div>
     </section>
@@ -74,7 +74,7 @@
         <h1 class="title"><span>Course</span><span> Details</span></h1>
         <div class="course-container">
             <%--php--%>
-            <div class="course-item"  data-aos="fade-up" data-aos-duration="200">
+            <div class="course-item" data-aos="fade-up" data-aos-duration="200">
                 <div class="item-title">
                     <h3>PHP Technology</h3>
                     <h1>6000/- Rs</h1>
@@ -104,7 +104,7 @@
                 </div>
             </div>
             <%--asp--%>
-            <div class="course-item"  data-aos="fade-up" data-aos-duration="300">
+            <div class="course-item" data-aos="fade-up" data-aos-duration="300">
                 <div class="item-title">
                     <h3>ASP.NET Technology</h3>
                     <h1>6000/- Rs</h1>
@@ -134,7 +134,7 @@
                 </div>
             </div>
             <%--java--%>
-            <div class="course-item"  data-aos="fade-up" data-aos-duration="400">
+            <div class="course-item" data-aos="fade-up" data-aos-duration="400">
                 <div class="item-title">
                     <h3>JAVA Technology</h3>
                     <h1>6000/- Rs</h1>
@@ -164,7 +164,7 @@
                 </div>
             </div>
             <%--java+php+asp--%>
-            <div class="course-item"  data-aos="fade-up" data-aos-duration="300">
+            <div class="course-item" data-aos="fade-up" data-aos-duration="300">
                 <div class="item-title">
                     <h3>JAVA+ASP+PHP Technology</h3>
                     <h1>15000/- Rs</h1>
@@ -190,7 +190,7 @@
                 </div>
             </div>
             <%--android--%>
-            <div class="course-item"  data-aos="fade-up" data-aos-duration="100">
+            <div class="course-item" data-aos="fade-up" data-aos-duration="100">
                 <div class="item-title">
                     <h3>Android Technology</h3>
                     <h1>6000/- Rs</h1>
@@ -216,7 +216,7 @@
                 </div>
             </div>
             <%--python--%>
-            <div class="course-item"  data-aos="fade-up" data-aos-duration="200">
+            <div class="course-item" data-aos="fade-up" data-aos-duration="200">
                 <div class="item-title">
                     <h3>Python Technology</h3>
                     <h1>6000/- Rs</h1>
@@ -244,7 +244,7 @@
                 </div>
             </div>
             <%--vlsi--%>
-            <div class="course-item"  data-aos="fade-up" data-aos-duration="100">
+            <div class="course-item" data-aos="fade-up" data-aos-duration="100">
                 <div class="item-title">
                     <h3>VLSI Technology</h3>
                     <h1>10000/- Rs</h1>
@@ -270,7 +270,7 @@
                 </div>
             </div>
             <%--plc--%>
-            <div class="course-item"  data-aos="fade-up" data-aos-duration="300">
+            <div class="course-item" data-aos="fade-up" data-aos-duration="300">
                 <div class="item-title">
                     <h3>PLC/SCADA Technology</h3>
                     <h1>10000/- Rs</h1>
@@ -296,7 +296,7 @@
                 </div>
             </div>
             <%--matlab--%>
-            <div class="course-item"  data-aos="fade-up" data-aos-duration="200">
+            <div class="course-item" data-aos="fade-up" data-aos-duration="200">
                 <div class="item-title">
                     <h3>matlab Technology</h3>
                     <h1>10000/- Rs</h1>
@@ -322,7 +322,7 @@
                 </div>
             </div>
             <%--auto cad--%>
-            <div class="course-item"  data-aos="fade-up" data-aos-duration="300">
+            <div class="course-item" data-aos="fade-up" data-aos-duration="300">
                 <div class="item-title">
                     <h3>Auto-cad Technology</h3>
                     <h1>10000/- Rs</h1>
@@ -348,7 +348,7 @@
                 </div>
             </div>
             <%--staaad--%>
-            <div class="course-item"  data-aos="fade-up" data-aos-duration="300">
+            <div class="course-item" data-aos="fade-up" data-aos-duration="300">
                 <div class="item-title">
                     <h3>staad pro Technology</h3>
                     <h1>10000/- Rs</h1>
@@ -374,7 +374,7 @@
                 </div>
             </div>
             <%--c,c++,java--%>
-            <div class="course-item"  data-aos="fade-up" data-aos-duration="100">
+            <div class="course-item" data-aos="fade-up" data-aos-duration="100">
                 <div class="item-title">
                     <h3>C, C++ and core java</h3>
                     <h1>8000/- Rs</h1>
@@ -400,7 +400,7 @@
                 </div>
             </div>
             <%--management--%>
-            <div class="course-item"  data-aos="fade-up" data-aos-duration="400">
+            <div class="course-item" data-aos="fade-up" data-aos-duration="400">
                 <div class="item-title">
                     <h3>Management internship</h3>
                     <h1>1200/- Rs</h1>
@@ -431,18 +431,19 @@
     <section class="gallery" id="gallery">
         <h1 class="title mb-3"><span>Moments</span><span> of captures</span></h1>
         <div>
-            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/res/media/img/1.jpg" CssClass="gallery-img" OnClick="ImageButton2_Click"  data-aos="fade-up" data-aos-duration="200" />
-            <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/res/media/img/2.jpg" CssClass="gallery-img" OnClick="ImageButton3_Click"  data-aos="fade-up" data-aos-duration="400" />
-            <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="~/res/media/img/3.jpg" CssClass="gallery-img" OnClick="ImageButton4_Click"  data-aos="fade-up" data-aos-duration="600" />
-            <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="~/res/media/img/4.jpg" CssClass="gallery-img" OnClick="ImageButton5_Click"  data-aos="fade-up" data-aos-duration="800" />
-            <asp:ImageButton ID="ImageButton6" runat="server" ImageUrl="~/res/media/img/5.jpg" CssClass="gallery-img" OnClick="ImageButton6_Click"  data-aos="fade-up" data-aos-duration="1000" />
-            <asp:ImageButton ID="ImageButton7" runat="server" ImageUrl="~/res/media/img/6.jpg" CssClass="gallery-img" OnClick="ImageButton7_Click"  data-aos="fade-up" data-aos-duration="1200" />
-            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/res/media/img/7.jpg" CssClass="gallery-img" OnClick="ImageButton1_Click"  data-aos="fade-up" data-aos-duration="1400" />
+            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/res/media/img/1.jpg" CssClass="gallery-img" OnClick="ImageButton2_Click" data-aos="fade-up" data-aos-duration="200" />
+            <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/res/media/img/2.jpg" CssClass="gallery-img" OnClick="ImageButton3_Click" data-aos="fade-up" data-aos-duration="400" />
+            <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="~/res/media/img/3.jpg" CssClass="gallery-img" OnClick="ImageButton4_Click" data-aos="fade-up" data-aos-duration="600" />
+            <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="~/res/media/img/4.jpg" CssClass="gallery-img" OnClick="ImageButton5_Click" data-aos="fade-up" data-aos-duration="800" />
+            <asp:ImageButton ID="ImageButton6" runat="server" ImageUrl="~/res/media/img/5.jpg" CssClass="gallery-img" OnClick="ImageButton6_Click" data-aos="fade-up" data-aos-duration="1000" />
+            <asp:ImageButton ID="ImageButton7" runat="server" ImageUrl="~/res/media/img/6.jpg" CssClass="gallery-img" OnClick="ImageButton7_Click" data-aos="fade-up" data-aos-duration="1200" />
+            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/res/media/img/7.jpg" CssClass="gallery-img" OnClick="ImageButton1_Click" data-aos="fade-up" data-aos-duration="1400" />
         </div>
     </section>
     <%--member--%>
-    <div class="member" style="margin-top:50px" id="team">
+    <div class="member" style="margin-top: 50px" id="team">
         <h1 class="title mb-3"><span>Our</span><span> Team</span></h1>
+        <%--director--%>
         <div class="mentor" data-aos="fade-up" data-aos-duration="200">
             <div class="image">
                 <img src="../res/media/img/1%20(2).jpg" />
@@ -452,13 +453,14 @@
                 <p><strong>Dr. Virendra Kumar Pathak.</strong></p>
                 <small>LLB (High Court)</small>
                 <div class="member-link">
-                    <a  href="#" target="_blank"><i class="fa-brands fa-facebook-f "></i></a>
-                    <a  href="#" target="_blank"><i class="fa-brands fa-square-instagram "></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-facebook-f "></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-square-instagram "></i></a>
                     <a href="#" target="_blank"><i class="fa-brands fa-twitter "></i></a>
-                    <a  href="#" target="_blank"><i class="fa-brands fa-square-whatsapp "></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-square-whatsapp "></i></a>
                 </div>
             </div>
         </div>
+        <%--trainer--%>
         <div class="mentor mentor-direction-right" id="mentor" data-aos="fade-up" data-aos-duration="400">
             <div class="image">
                 <img src="../res/media/img/mentor%201.jpg" />
@@ -475,6 +477,7 @@
                 </div>
             </div>
         </div>
+        <%--founder--%>
         <div class="mentor" data-aos="fade-up" data-aos-duration="600">
             <div class="image">
                 <img src="../res/media/img/2%20(2).jpg" />
@@ -484,13 +487,14 @@
                 <p><strong>Mr. Ashish Pathak.</strong></p>
                 <small>B.Tech, LLB Honors</small>
                 <div class="member-link">
-                    <a  href="#" target="_blank"><i class="fa-brands fa-facebook-f "></i></a>
-                    <a  href="#" target="_blank"><i class="fa-brands fa-square-instagram "></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-facebook-f "></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-square-instagram "></i></a>
                     <a href="#" target="_blank"><i class="fa-brands fa-twitter "></i></a>
-                    <a  href="#" target="_blank"><i class="fa-brands fa-square-whatsapp "></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-square-whatsapp "></i></a>
                 </div>
             </div>
         </div>
+        <%--techincal--%>
         <div class="mentor mentor-direction-right" data-aos="fade-up" data-aos-duration="800">
             <div class="image">
                 <img src="../res/media/img/3%20(2).jpg" />
@@ -500,13 +504,14 @@
                 <p><strong>Ms. Shraddha Pathak.</strong></p>
                 <small>B.Tech Honors</small>
                 <div class="member-link">
-                    <a  href="#" target="_blank"><i class="fa-brands fa-facebook-f "></i></a>
-                    <a  href="#" target="_blank"><i class="fa-brands fa-square-instagram "></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-facebook-f "></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-square-instagram "></i></a>
                     <a href="#" target="_blank"><i class="fa-brands fa-twitter "></i></a>
-                    <a  href="#" target="_blank"><i class="fa-brands fa-square-whatsapp "></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-square-whatsapp "></i></a>
                 </div>
             </div>
         </div>
+        <%--manager--%>
         <div class="mentor" data-aos="fade-up" data-aos-duration="1000">
             <div class="image">
                 <img src="../res/media/img/4%20(1).jpg" />
@@ -516,13 +521,14 @@
                 <p><strong>Mrs. Aarti Pathak.</strong></p>
                 <small>Trainer and Leagal Advisor.</small>
                 <div class="member-link">
-                    <a  href="#" target="_blank"><i class="fa-brands fa-facebook-f "></i></a>
-                    <a  href="#" target="_blank"><i class="fa-brands fa-square-instagram "></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-facebook-f "></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-square-instagram "></i></a>
                     <a href="#" target="_blank"><i class="fa-brands fa-twitter "></i></a>
-                    <a  href="#" target="_blank"><i class="fa-brands fa-square-whatsapp "></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-square-whatsapp "></i></a>
                 </div>
             </div>
         </div>
+        <%--Admin--%>
         <div class="mentor mentor-direction-right" id="developer" data-aos="fade-up" data-aos-duration="1200">
             <div class="image">
                 <img src="../res/media/img/developer.jpg" />
@@ -559,25 +565,24 @@
         <div class="social">
             <h3>Follow Us</h3>
             <div>
-                <asp:hyperlink navigateurl="navigateurl" runat="server" >Facebook</asp:hyperlink>
-                <asp:hyperlink navigateurl="navigateurl" runat="server" >Facebook</asp:hyperlink>
-                <asp:hyperlink navigateurl="navigateurl" runat="server" >Google+</asp:hyperlink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server">Facebook</asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server">Facebook</asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server">Google+</asp:HyperLink>
             </div>
         </div>
         <div class="quick-links">
             <h3>Contact Us</h3>
             <div>
-                <asp:label text="Email : sunriseinfotechsolutionn@gmail.com" runat="server" />
-                <asp:label text="Call : 7755890555,7267973767" runat="server" />
+                <asp:Label Text="Email : sunriseinfotechsolutionn@gmail.com" runat="server" />
+                <asp:Label Text="Call : 7755890555,7267973767" runat="server" />
             </div>
         </div>
         <div class="address">
             <h3>Find Us On</h3>
             <div>
-                <asp:label text="643Ma/288 Mithlesh Sadan Mohibullapur near noubasta pulia p/s Madion" runat="server" />
-                <asp:label text="Sitapur road,Luchnow-226021" runat="server" />
+                <asp:Label Text="643Ma/288 Mithlesh Sadan Mohibullapur near noubasta pulia p/s Madion" runat="server" />
+                <asp:Label Text="Sitapur road,Luchnow-226021" runat="server" />
             </div>
         </div>
     </section>
-    
 </asp:Content>

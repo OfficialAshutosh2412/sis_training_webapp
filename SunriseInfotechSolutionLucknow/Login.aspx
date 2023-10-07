@@ -2,26 +2,21 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <%---bg--%>
     <section class="signin">
         <h1>Signin</h1>
         <div class="forms">
             <div class="form-item">
-                <p>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" autocomplete="true"  ErrorMessage="email should be filled" ForeColor="#FF3300" ControlToValidate="email">*</asp:RequiredFieldValidator><i class="fa-solid fa-envelope"></i> <asp:Label Text="Email" runat="server" /></p>
+                <p><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" autocomplete="true"  ErrorMessage="email should be filled" ForeColor="#FF3300" ControlToValidate="email">*</asp:RequiredFieldValidator><i class="fa-solid fa-envelope"></i> <asp:Label Text="Email" runat="server" /></p>
                 <asp:TextBox ID="email" runat="server" placeholder="please do not write '@gmail.com'"></asp:TextBox>
             </div>
            </div> 
         <div class="forms">
              <div class="form-item">
-                <p>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="fill password field" ForeColor="#FF3300" ControlToValidate="password">*</asp:RequiredFieldValidator><i class="fa-solid fa-key"></i>
+                <p><asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="fill password field" ForeColor="#FF3300" ControlToValidate="password">*</asp:RequiredFieldValidator><i class="fa-solid fa-key"></i>
                     <asp:Label Text="password" runat="server" /></p>
                 <asp:TextBox ID="password" runat="server" TextMode="Password"></asp:TextBox>
             </div>
         </div>
-       
-        
         <div class="forms">
             <div class="form-item">
                 <asp:Button ID="Button1" runat="server" Text="Signin now !"  CssClass="submit p-2 rounded" style="background:var(--hover-bg);width:fit-content;" OnClick="Button1_Click"/>

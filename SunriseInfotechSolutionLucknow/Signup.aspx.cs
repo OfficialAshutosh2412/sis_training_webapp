@@ -42,39 +42,26 @@ namespace SunriseInfotechSolutionLucknow
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                con.Open();
-                FileUpload1.SaveAs(Server.MapPath("profileFolder/") + FileUpload1.FileName);
-                cmd.CommandText = "INSERT INTO Signup VALUES('" + name.Text + "', '" + password.Text + "', '" + dob.Text + "', '" + email.Text + "', " + phone.Text + ", '" + college.Text + "', '" + course.Text + "', '" + semester.Text + "','" + tech.Text + "', '" + DropDownList1.SelectedValue + "', '" + FileUpload1.FileName + "', '" + "user" + "', '" + address.Text + "','" + joindate.Text + "')";
-                cmd.ExecuteNonQuery();
-                cmd.CommandText = "INSERT INTO Signin VALUES('" + email.Text.Replace("'", "''") + "', '" + password.Text.Replace("'", "''") + "', '" + "user" + "')";
-                cmd.ExecuteNonQuery();
-                Response.Redirect("~/Login.aspx");
-            }
-            catch
-            {
-                Response.Redirect("~/ErrorPage.aspx");
-            }
+            con.Open();
+            FileUpload1.SaveAs(Server.MapPath("profileFolder/") + FileUpload1.FileName);
+            cmd.CommandText = "INSERT INTO Signup VALUES('" + name.Text + "', '" + password.Text + "', '" + dob.Text + "', '" + email.Text + "', " + phone.Text + ", '" + college.Text + "', '" + course.Text + "', '" + semester.Text + "','" + tech.Text + "', '" + DropDownList1.SelectedValue + "', '" + FileUpload1.FileName + "', '" + "user" + "', '" + address.Text + "','" + joindate.Text + "')";
+            cmd.ExecuteNonQuery();
+            cmd.CommandText = "INSERT INTO Signin VALUES('" + email.Text.Replace("'", "''") + "', '" + password.Text.Replace("'", "''") + "', '" + "user" + "')";
+            cmd.ExecuteNonQuery();
+            Response.Redirect("~/Login.aspx");
+
         }
 
         protected void AdminBtn_Click(object sender, EventArgs e)
         {
-            try
-            {
-                con.Open();
-                FileUpload1.SaveAs(Server.MapPath("profileFolder/") + FileUpload1.FileName);
-                cmd.CommandText = "INSERT INTO Signup VALUES('" + name.Text + "', '" + password.Text + "', '" + dob.Text + "', '" + email.Text + "', " + phone.Text + ", '" + null + "', '" + null + "', '" + null + "','" + null + "', '" + DropDownList1.SelectedValue + "', '" + FileUpload1.FileName + "', '" + "admin" + "', '" + address.Text + "','" + joindate.Text + "')";
-                cmd.ExecuteNonQuery();
-                cmd.CommandText = "INSERT INTO Signin VALUES('" + email.Text.Replace("'", "''") + "', '" + password.Text.Replace("'", "''") + "', '" + "admin" + "')";
-                cmd.ExecuteNonQuery();
-                con.Close();
-                Response.Redirect("~/Login.aspx");
-            }
-            catch
-            {
-                Response.Redirect("~/ErrorPage.aspx");
-            }
+            con.Open();
+            FileUpload1.SaveAs(Server.MapPath("profileFolder/") + FileUpload1.FileName);
+            cmd.CommandText = "INSERT INTO Signup VALUES('" + name.Text + "', '" + password.Text + "', '" + dob.Text + "', '" + email.Text + "', " + phone.Text + ", '" + null + "', '" + null + "', '" + null + "','" + null + "', '" + DropDownList1.SelectedValue + "', '" + FileUpload1.FileName + "', '" + "admin" + "', '" + address.Text + "','" + joindate.Text + "')";
+            cmd.ExecuteNonQuery();
+            cmd.CommandText = "INSERT INTO Signin VALUES('" + email.Text.Replace("'", "''") + "', '" + password.Text.Replace("'", "''") + "', '" + "admin" + "')";
+            cmd.ExecuteNonQuery();
+            con.Close();
+            Response.Redirect("~/Login.aspx");
         }
     }
 }

@@ -6,9 +6,7 @@
     <section class="profile"  style="margin-top:100px">
         <div class="pro-foot pro-feet">
             <h3><i class="fa-solid fa-user"></i> Profile</h3>
-            <p>
-                <asp:HyperLink NavigateUrl="~/Registered/EditProfile.aspx" runat="server" style="color:var(--hover-bg);font-size:1.5rem" ToolTip="edit profile" ><i class="fa-solid fa-user-pen"></i></asp:HyperLink>
-            </p>
+            <p><asp:HyperLink NavigateUrl="~/Registered/EditProfile.aspx" runat="server" style="color:var(--hover-bg);font-size:1.5rem" ToolTip="edit profile" ><i class="fa-solid fa-user-pen"></i></asp:HyperLink></p>
         </div>
         <div class="profile-container">
             <div class="pro-img">
