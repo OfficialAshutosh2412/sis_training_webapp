@@ -26,7 +26,7 @@
             <div class="container-fluid">
                 <asp:Hyperlink runat="server"  CssClass="navbar-brand nav-img" NavigateUrl="~/Registered/Userhome.aspx" style="cursor:pointer"><img src="../res/media/img/WhatsApp%20Image%202023-09-27%20at%2000.28.21.jpg" /><label  style="cursor:pointer" class="brand-name">Sunrise Infotech Solution</label></asp:Hyperlink>
                 <label class="icon bg-light" id="icon">
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars"></i> Menu
                 </label>
                 <div class="collapse navbar-collapse justify-content-end small_nav" id="navbarNav">
                     <ul class="navbar-nav">

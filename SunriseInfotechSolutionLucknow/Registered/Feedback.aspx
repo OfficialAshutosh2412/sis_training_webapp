@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Registered/Register_Layout.Master" AutoEventWireup="true" CodeBehind="Feedback.aspx.cs" Inherits="SunriseInfotechSolutionLucknow.Registered.Contactus" %>
+﻿<%@ Page Title="SIS | Feedback" Language="C#" MasterPageFile="~/Registered/Register_Layout.Master" AutoEventWireup="true" CodeBehind="Feedback.aspx.cs" Inherits="SunriseInfotechSolutionLucknow.Registered.Contactus" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <section class="signin">
+    <section class="signin" style="margin-top:30px;">
         <h1><i class="fa-solid fa-hand-holding-heart"></i> Feedback</h1>
         <div class="forms">
             <div class="form-item">

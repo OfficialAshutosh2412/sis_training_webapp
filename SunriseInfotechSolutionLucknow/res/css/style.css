@@ -131,6 +131,7 @@ input::placeholder{
     left: 0;
     z-index: 100;
     width: 100%;
+    background:#1d1d1d;
 }
 
 .nav-link, .navbar-brand {
@@ -141,7 +142,7 @@ input::placeholder{
     .nav-link:hover, .navbar-brand:hover {
         color: black !important;
         background: var(--hover-bg);
-        transition: 0.5s all ease-in-out;
+        transition: 0.2s all ease-in-out;
         border-radius: 5px;
     }
     .nav-img img{
@@ -167,7 +168,7 @@ input::placeholder{
 .icon{
     background:var(--hover-bg) !important;
     padding:3px 8px;
-    font-size:1.4rem;
+    font-size:1rem;
     border-radius:3px;
 }
     .icon:hover + .small_nav {

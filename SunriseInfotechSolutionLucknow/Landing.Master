@@ -35,7 +35,7 @@
                     <img src="res/media/img/WhatsApp%20Image%202023-09-27%20at%2000.28.21.jpg" />
                     Sunrise Infotech Solution</asp:Hyperlink>
                 <label class="icon bg-light" id="icon">
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars"></i> Menu
                 </label>
                 <div class="justify-content-end small_nav">
                     <ul class="navbar-nav">
