@@ -19,7 +19,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body style="background:#092533;color:#dcdcdc">
+<body style="background:#092533;color:#dcdcdc;">
     <form id="form1" runat="server">
         <i class="fa-solid fa-gear fa-spin" style="position:fixed;z-index:-10;font-size:30rem;right:-300px;bottom:0"></i>
         <%--navbar--%>

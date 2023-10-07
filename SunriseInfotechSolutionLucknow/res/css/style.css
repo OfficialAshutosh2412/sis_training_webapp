@@ -538,6 +538,7 @@ input::placeholder{
 .langs img{
     width:fit-content;
 }
+
 /*footer*/
 .footer {
     display: flex;
@@ -656,11 +657,29 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    width:90%;
-    margin:0 auto;
-    margin-top:100px;
-    border-radius:10px;
-    background: linear-gradient(to right,#056681,#333131 );
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    transition: 0.5s all linear;
+    animation: changebg 30s linear infinite;
+}
+@keyframes changebg{
+    0% {
+        background: linear-gradient(to right,#cc005e,#056681,#cc005e);
+        background-size: 500%;
+        background-position: left;
+    }
+    50% {
+        background: linear-gradient(to right,#cc005e,#056681,#cc005e);
+        background-position: right;
+        background-size: 500%;
+    }
+    100% {
+        background: linear-gradient(to right,#cc005e,#056681,#cc005e);
+        background-position: left;
+        background-size: 500%;
+    }
 }
 /*profile*/
 .profile {
@@ -672,7 +691,7 @@ textarea {
     border-radius: 10px;
     background-size: cover;
     background-position: right;
-    background: linear-gradient(to right,#056681,#333131 );
+    animation: changebg 30s linear infinite;
 }
 .pro-img {
     
@@ -699,8 +718,11 @@ textarea {
     }
     /*certificate*/
 .certificate-container {
-    width: 90%;margin: 0 auto;padding: 1%;border-radius: 10px;
-    background: linear-gradient(to right,#056681,#333131 );
+    width: 90%;
+    margin: 0 auto;
+    padding: 1%;
+    border-radius: 10px;
+    animation: changebg 30s linear infinite;
 }
 .certificate {
     display: flex;
@@ -1022,5 +1044,8 @@ textarea {
     }
     .status{
         width:90% !important;
+    }
+    #navtext{
+        display:none
     }
 }
