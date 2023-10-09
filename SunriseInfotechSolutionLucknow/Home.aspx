@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <%--hero section--%>
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-img" data-aos="zoom-in-up" data-aos-duration="500">
             <img src="res/media/img/20190708_002647.png" />
         </div>

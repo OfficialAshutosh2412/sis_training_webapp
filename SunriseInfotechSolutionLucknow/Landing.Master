@@ -13,19 +13,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="res/css/style.min.css" rel="stylesheet" />
+    <link href="res/css/style.css" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body style="background: #242424; color: #f1f1f1" onload="loading()">
     <form id="form1" runat="server">
+        <div class="bg-back">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <%--preloader--%>
         <div class="preloader" id="preloader"><div class="colorful"></div></div>
-        <%--video-bg--%>
-        <div class="bg-animation">
-            <img src="res/media/img/PngItem_1128687.png" />
-            <img src="res/media/img/PngItem_6859977.png" />
-        </div>
+        <div id="body-bg"></div>
         <%--navbar--%>
         <nav class="navbar navbar-expand-xxl ">
             <div class="container-fluid">
