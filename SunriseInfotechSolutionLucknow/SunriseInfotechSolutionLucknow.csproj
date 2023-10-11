@@ -109,12 +109,17 @@
     <Content Include="res\media\img\5.jpg" />
     <Content Include="res\media\img\6.jpg" />
     <Content Include="res\media\img\7.jpg" />
+    <Content Include="res\media\img\android.png" />
     <Content Include="res\media\img\asp.jpg" />
+    <Content Include="res\media\img\asp.png" />
     <Content Include="res\media\img\bigdata.png" />
+    <Content Include="res\media\img\c++.png" />
+    <Content Include="res\media\img\cad.png" />
     <Content Include="res\media\img\cakephp.jpg" />
     <Content Include="res\media\img\developer.jpg" />
     <Content Include="res\media\img\director.jpg" />
     <Content Include="res\media\img\ethical.jpg" />
+    <Content Include="res\media\img\hero-img.png" />
     <Content Include="res\media\img\java.png" />
     <Content Include="res\media\img\jsp.png" />
     <Content Include="res\media\img\matlab.jpg" />
@@ -122,7 +127,9 @@
     <Content Include="res\media\img\PngItem_1128687.png" />
     <Content Include="res\media\img\PngItem_6859977.png" />
     <Content Include="res\media\img\pngwing.com.png" />
+    <Content Include="res\media\img\Programming.gif" />
     <Content Include="res\media\img\python.png" />
+    <Content Include="res\media\img\vlsi.png" />
     <Content Include="res\media\img\WhatsApp Image 2023-09-27 at 00.28.21.jpg" />
     <Content Include="res\media\img\wordpress.png" />
     <Content Include="res\media\video\Untitled.mp4" />

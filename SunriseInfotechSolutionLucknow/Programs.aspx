@@ -3,27 +3,25 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <section class="text-light p-3" style="text-align: justify; margin-top: 6%;">
-        <div class="bg-dark p-2 m-1 rounded">
-            <h1 class="p-4 bg-body-secondary text-black rounded">Project Based Industrial Summer Training</h1>
+    <section class="programs"  style="width:100%;text-align: justify; margin-top: 6%;">
+        <div class="rounded about-sections w-100">
+            <h1 class="p-4 bg-body-secondary  rounded">Project Based Industrial Summer Training</h1>
             <p>
                 Program Objective-To provide an occupational training program to the students that combine on-the-job work experience with technical/managerial and classroom study. It is specifically beneficial for the final year and passout students of various professional courses. 
             </p>
         </div>
-        <div class="about-flex">
-            <div class="bg-dark p-2 m-1 rounded">
-                <h5 class="text-info">Eligibility: 
+        <div class="about-flex ">
+            <div class="about-sections">
+                <h5>Eligibility: 
                 </h5>
                 <ul>
                     <li>B.Tech. CS, IT 4th year students / passout students</li>
                     <li>BCA, MCA 3rd year students / passout students</li>
                     <li>Diploma CS, IT Final year / passout students </li>
                 </ul>
-                <h5 class="text-info">Duration: 2 Months
-                </h5>
-                <h5 class="text-info">Training start date –  15 July, 2018 </h5>
-                <h5 class="text-info">Program Overview:
-                </h5>
+                <h5>Duration: 2 Months</h5>
+                <h5>Training start date –  15 July, 2018 </h5>
+                <h5>Program Overview:</h5>
                 <ul>
                     <li>JAVA</li>
                     <li>PHP</li>
@@ -36,7 +34,7 @@
                 </ul>
             </div>
             <div class="about-sections">
-                <h5 class="text-info">Benefits:</h5>
+                <h5>Benefits:</h5>
                 <ul>
                     <li>Hands-on career training</li>
                     <li>Gaining skills and knowledge of the chosen industry</li>
@@ -44,7 +42,7 @@
                     <li>A combination of learning and implementing skills</li>
                     <li>A curriculum that is highly relevant to your future work</li>
                 </ul>
-                <h5 class="text-info">Training For CS/IT Students: </h5>
+                <h5>Training For CS/IT Students: </h5>
                 <p>Computer Science/Information technology is a challenging, thrilling and an emerging field that has impacted our day to day life. The applications of CS/IT field can range from fields like business, science and communication. At CETPA, we have a plethora of CS/IT related courses that will fulfill all your requirements to be a well groomed CS/IT professional. All the courses at CETPA are well structured consisting of latest updated syllabus covered by expert trainers to guide you to success</p>
             </div>
         </div>
@@ -95,8 +93,8 @@
                 </ul>
             </div>
         </div>
-        <div class="about-sections">
-            <h5 class="text-info">Training For Electronics Students: </h5>
+        <div class="about-sections w-100">
+            <h5>Training For Electronics Students: </h5>
             <p>If you enjoy mathematics and science, are fascinated by electricity, energy and electronics, and want to invent and design things that benefit society, you may wish to get trained in Electronics Courses. We encourage students to think in innovative ways and challenge existing practice that equips them with the skills and confidence to meet the Industry Trends. Electronic engineering is a fast-moving subject, and we continually revise our training programs and syllabus to reflect both the latest developments in engineering education and the emerging needs of industry.</p>
             <p>We have special designed technical courses in Electronic Engineering as mentioned below.</p>
             <ul>
@@ -113,7 +111,7 @@
         </div>
         <div class="about-flex">
             <div class="about-sections">
-                <h5 class="text-info">Training For Mechanical & Civil Students: </h5>
+                <h5>Training For Mechanical & Civil Students: </h5>
                 <p>
                     Mechanical and Civil engineering is one of the highest paying domains in engineering. The only requirement is that you should have efficient and worthy skills. For matching the current demand, CETPA has designed a list of important technical courses in Mechanical/Civil Engineering (mentioned below) that will help you to gain solid knowledge and confidence to prove your worth.
                 </p>
@@ -154,57 +152,59 @@
                 </ul>
             </div>
             <div class="about-sections">
-                <h5 class="text-info">Students: </h5>
+                <h5>Students: </h5>
                 <p>
                     Electrical engineering consists of a wide variety of sub disciplines that students can choose, such as power, control, electronics, micro electronics, signal processing, communication, instrumentation and computers. A training course in Electrical Engineering will prepare students for an exciting and creative profession. For an exclusive range of top technical courses in Electrical Engineering, enroll at CETPA, and get access to world class training from expert trainers with exclusive placement assistance.
                 </p>
             </div>
         </div>
     </section>
-    <section class="about-sections">
+    <section class="about-sections w-100">
         <h1 class="p-4 bg-body-secondary text-black rounded">College Training Programs</h1>
         <p>
             Program Objective-To provide an occupational training program to the students that combine on-the-job work experience with technical/managerial and classroom study. It is specifically beneficial for the final year and passout students of various professional courses.
         </p>
-        <h5 class="text-info">Eligibilty: </h5>
+        <h5>Eligibilty: </h5>
         <ul>
             <li>B.Tech. CS, IT 4th year students / passout students</li>
             <li>BCA, MCA 3rd year students / passout students </li>
             <li>Diploma CS, IT Final year / passout students </li>
         </ul>
-        <h5 class="text-info">Duration: 2 Months</h5>
-        <h5 class="text-info">Training start date:  15 July, 2018 </h5>
-        <h5 class="text-info">Program Overview: </h5>
+        <h5>Duration: 2 Months</h5>
+        <h5>Training start date:  15 July, 2018 </h5>
+        <h5>Program Overview: </h5>
         <p>JAVA, PHP, ASP.NET, Python, Android, Databases, Life Cycles, GD/PI</p>
     </section>
-    <section class="about-sections">
+    <section class="about-sections w-100">
         <h1 class="p-4 bg-body-secondary text-black rounded">Previous Year Question Paper</h1>
-        <h5 class="text-info">Java FAQs: 2003
+        <h5>Java FAQs: 2003
             <asp:HyperLink NavigateUrl="res/media/files/C FAQ.pdf" runat="server"><i class="fa-solid fa-download"></i></asp:HyperLink>
         </h5>
-        <h5 class="text-info">ASCII Chart FAQs: 2003
+        <h5>ASCII Chart FAQs: 2003
             <asp:HyperLink NavigateUrl="res/media/files/ASCII%20Chart%20and%20Other%20Resources.pdf" runat="server"><i class="fa-solid fa-download"></i></asp:HyperLink>
         </h5>
     </section>
     <%--footer--%>
     <section class="footer" id="contact">
         <div class="social">
-            <h3>Follow us</h3>
+            <h3><i class="fa-solid fa-thumbs-up"></i> Follow Us</h3>
             <div>
-                <asp:HyperLink NavigateUrl="navigateurl" runat="server">Facebook</asp:HyperLink>
-                <asp:HyperLink NavigateUrl="navigateurl" runat="server">Facebook</asp:HyperLink>
-                <asp:HyperLink NavigateUrl="navigateurl" runat="server">Google+</asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-facebook"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-google-plus"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-x-twitter"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-whatsapp"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-instagram"></i></asp:HyperLink>
             </div>
         </div>
         <div class="quick-links">
-            <h3>Contact us</h3>
+            <h3><i class="fa-solid fa-phone-volume"></i> Contact Us</h3>
             <div>
-                <asp:Label Text="Email : sunriseinfotechsolutionn@gmail.com" runat="server" />
-                <asp:Label Text="Call : 7755890555,7267973767" runat="server" />
+                <p><i class="fa-solid fa-envelope" style="color:var(--hover-bg);"></i> <asp:Label Text="sunriseinfotechsolutionn@gmail.com" runat="server" /></p>
+                <p><i class="fa-solid fa-tty" style="color:var(--hover-bg);"></i> <asp:Label Text="7755890555,7267973767" runat="server" /></p>
             </div>
         </div>
         <div class="address">
-            <h3>Find us</h3>
+            <h3><i class="fa-solid fa-location-dot"></i> Find Us On</h3>
             <div>
                 <asp:Label Text="643Ma/288 Mithlesh Sadan Mohibullapur near noubasta pulia p/s Madion" runat="server" />
                 <asp:Label Text="Sitapur road,Luchnow-226021" runat="server" />

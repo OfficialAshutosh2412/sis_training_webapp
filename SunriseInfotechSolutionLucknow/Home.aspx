@@ -5,12 +5,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <%--hero section--%>
     <section class="hero" id="hero">
-        <div class="hero-img" data-aos="zoom-in-up" data-aos-duration="500">
-            <img src="res/media/img/20190708_002647.png" />
+        <div class="hero-brand" data-aos="zoom-in-up" data-aos-duration="500">
+            <h1 class=" fw-lighter" data-aos="zoom-in-up" data-aos-duration="1500">SUNRISE INFOTECH SOLUTION</h1>
+            <h3 class="title" data-aos="zoom-in-up" data-aos-duration="2000"><span>WHERE</span><span> Quality Matters</span></h3>
         </div>
-        <div style="margin-top: -20px;">
-            <h3 class="title" data-aos="zoom-in-up" data-aos-duration="1500">SUNRISE INFOTECH SOLUTION</h3>
-            <h1 class="title" data-aos="zoom-in-up" data-aos-duration="2000"><span>WHERE</span><span> Quality Matters</span></h1>
+        <div class="hero-img">
+            <img src="res/media/img/Programming.gif" class="hero-gif"/>
         </div>
     </section>
     <%--about us--%>
@@ -35,7 +35,7 @@
     <section class="service" id="service">
         <h1 class="title"><span>Services</span><span> We Provide</span></h1>
         <div class="services-container">
-            <div data-aos="zoom-in-up" data-aos-duration="100">
+            <div data-aos="zoom-in-up" data-aos-duration="100" >
                 <h1>software development</h1>
                 <asp:HyperLink NavigateUrl="~/Programs.aspx" runat="server" ToolTip="download brochure"><i class="fa-solid fa-chevron-right"></i></asp:HyperLink>
             </div>
@@ -71,11 +71,12 @@
     </section>
     <%--courses--%>
     <section class="course" id="course">
-        <h1 class="title"><span>Course</span><span> Details</span></h1>
+        <h1 class="title"><span>Course</span><span> we provide</span></h1>
         <div class="course-container">
             <%--php--%>
             <div class="course-item" data-aos="fade-up" data-aos-duration="200">
                 <div class="item-title">
+                    <img src="res/media/img/icomImage/php.png" />
                     <h3>PHP Technology</h3>
                     <h1>6000/- Rs</h1>
                 </div>
@@ -106,6 +107,7 @@
             <%--asp--%>
             <div class="course-item" data-aos="fade-up" data-aos-duration="300">
                 <div class="item-title">
+                     <img src="res/media/img/icomImage/asp.png" />
                     <h3>ASP.NET Technology</h3>
                     <h1>6000/- Rs</h1>
                 </div>
@@ -136,6 +138,7 @@
             <%--java--%>
             <div class="course-item" data-aos="fade-up" data-aos-duration="400">
                 <div class="item-title">
+                    <img src="res/media/img/icomImage/java.png" />
                     <h3>JAVA Technology</h3>
                     <h1>6000/- Rs</h1>
                 </div>
@@ -166,6 +169,7 @@
             <%--java+php+asp--%>
             <div class="course-item" data-aos="fade-up" data-aos-duration="300">
                 <div class="item-title">
+                    <img src="res/media/img/icomImage/mix.png" />
                     <h3>JAVA+ASP+PHP Technology</h3>
                     <h1>15000/- Rs</h1>
                 </div>
@@ -192,6 +196,7 @@
             <%--android--%>
             <div class="course-item" data-aos="fade-up" data-aos-duration="100">
                 <div class="item-title">
+                    <img src="res/media/img/icomImage/android.png" />
                     <h3>Android Technology</h3>
                     <h1>6000/- Rs</h1>
                 </div>
@@ -218,6 +223,7 @@
             <%--python--%>
             <div class="course-item" data-aos="fade-up" data-aos-duration="200">
                 <div class="item-title">
+                    <img src="res/media/img/icomImage/py.png" />
                     <h3>Python Technology</h3>
                     <h1>6000/- Rs</h1>
                 </div>
@@ -246,6 +252,7 @@
             <%--vlsi--%>
             <div class="course-item" data-aos="fade-up" data-aos-duration="100">
                 <div class="item-title">
+                    <img src="res/media/img/icomImage/vlsi.png" />
                     <h3>VLSI Technology</h3>
                     <h1>10000/- Rs</h1>
                 </div>
@@ -272,6 +279,7 @@
             <%--plc--%>
             <div class="course-item" data-aos="fade-up" data-aos-duration="300">
                 <div class="item-title">
+                    <img src="res/media/img/icomImage/plc.png" />
                     <h3>PLC/SCADA Technology</h3>
                     <h1>10000/- Rs</h1>
                 </div>
@@ -298,6 +306,7 @@
             <%--matlab--%>
             <div class="course-item" data-aos="fade-up" data-aos-duration="200">
                 <div class="item-title">
+                    <img src="res/media/img/icomImage/mat.png" />
                     <h3>matlab Technology</h3>
                     <h1>10000/- Rs</h1>
                 </div>
@@ -324,6 +333,7 @@
             <%--auto cad--%>
             <div class="course-item" data-aos="fade-up" data-aos-duration="300">
                 <div class="item-title">
+                    <img src="res/media/img/icomImage/cad.png" />
                     <h3>Auto-cad Technology</h3>
                     <h1>10000/- Rs</h1>
                 </div>
@@ -350,6 +360,7 @@
             <%--staaad--%>
             <div class="course-item" data-aos="fade-up" data-aos-duration="300">
                 <div class="item-title">
+                    <img src="res/media/img/icomImage/staad.png" />
                     <h3>staad pro Technology</h3>
                     <h1>10000/- Rs</h1>
                 </div>
@@ -376,6 +387,7 @@
             <%--c,c++,java--%>
             <div class="course-item" data-aos="fade-up" data-aos-duration="100">
                 <div class="item-title">
+                    <img src="res/media/img/icomImage/cs.png" />
                     <h3>C, C++ and core java</h3>
                     <h1>8000/- Rs</h1>
                 </div>
@@ -402,6 +414,7 @@
             <%--management--%>
             <div class="course-item" data-aos="fade-up" data-aos-duration="400">
                 <div class="item-title">
+                    <img src="res/media/img/icomImage/mgmnt.png" />
                     <h3>Management internship</h3>
                     <h1>1200/- Rs</h1>
                 </div>
@@ -434,17 +447,17 @@
             <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/res/media/img/1.jpg" CssClass="gallery-img" OnClick="ImageButton2_Click" data-aos="fade-up" data-aos-duration="200" />
             <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/res/media/img/2.jpg" CssClass="gallery-img" OnClick="ImageButton3_Click" data-aos="fade-up" data-aos-duration="400" />
             <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="~/res/media/img/3.jpg" CssClass="gallery-img" OnClick="ImageButton4_Click" data-aos="fade-up" data-aos-duration="600" />
-            <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="~/res/media/img/4.jpg" CssClass="gallery-img" OnClick="ImageButton5_Click" data-aos="fade-up" data-aos-duration="800" />
-            <asp:ImageButton ID="ImageButton6" runat="server" ImageUrl="~/res/media/img/5.jpg" CssClass="gallery-img" OnClick="ImageButton6_Click" data-aos="fade-up" data-aos-duration="1000" />
-            <asp:ImageButton ID="ImageButton7" runat="server" ImageUrl="~/res/media/img/6.jpg" CssClass="gallery-img" OnClick="ImageButton7_Click" data-aos="fade-up" data-aos-duration="1200" />
-            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/res/media/img/7.jpg" CssClass="gallery-img" OnClick="ImageButton1_Click" data-aos="fade-up" data-aos-duration="1400" />
+            <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="~/res/media/img/4.jpg" CssClass="gallery-img" OnClick="ImageButton5_Click" data-aos="fade-up" data-aos-duration="200" />
+            <asp:ImageButton ID="ImageButton6" runat="server" ImageUrl="~/res/media/img/5.jpg" CssClass="gallery-img" OnClick="ImageButton6_Click" data-aos="fade-up" data-aos-duration="400" />
+            <asp:ImageButton ID="ImageButton7" runat="server" ImageUrl="~/res/media/img/6.jpg" CssClass="gallery-img" OnClick="ImageButton7_Click" data-aos="fade-up" data-aos-duration="500" />
+            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/res/media/img/7.jpg" CssClass="gallery-img" OnClick="ImageButton1_Click" data-aos="fade-up" data-aos-duration="100" />
         </div>
     </section>
     <%--member--%>
     <div class="member" style="margin-top: 50px" id="team">
         <h1 class="title mb-3"><span>Our</span><span> Team</span></h1>
         <%--director--%>
-        <div class="mentor" data-aos="fade-up" data-aos-duration="200">
+        <div class="mentor" data-aos="fade-up" data-aos-duration="100">
             <div class="image">
                 <img src="../res/media/img/1%20(2).jpg" />
             </div>
@@ -461,7 +474,7 @@
             </div>
         </div>
         <%--trainer--%>
-        <div class="mentor mentor-direction-right" id="mentor" data-aos="fade-up" data-aos-duration="400">
+        <div class="mentor mentor-direction-right" id="mentor" data-aos="fade-up" data-aos-duration="200">
             <div class="image">
                 <img src="../res/media/img/mentor%201.jpg" />
             </div>
@@ -478,7 +491,7 @@
             </div>
         </div>
         <%--founder--%>
-        <div class="mentor" data-aos="fade-up" data-aos-duration="600">
+        <div class="mentor" data-aos="fade-up" data-aos-duration="100">
             <div class="image">
                 <img src="../res/media/img/2%20(2).jpg" />
             </div>
@@ -495,7 +508,7 @@
             </div>
         </div>
         <%--techincal--%>
-        <div class="mentor mentor-direction-right" data-aos="fade-up" data-aos-duration="800">
+        <div class="mentor mentor-direction-right" data-aos="fade-up" data-aos-duration="200">
             <div class="image">
                 <img src="../res/media/img/3%20(2).jpg" />
             </div>
@@ -512,7 +525,7 @@
             </div>
         </div>
         <%--manager--%>
-        <div class="mentor" data-aos="fade-up" data-aos-duration="1000">
+        <div class="mentor" data-aos="fade-up" data-aos-duration="100">
             <div class="image">
                 <img src="../res/media/img/4%20(1).jpg" />
             </div>
@@ -529,7 +542,7 @@
             </div>
         </div>
         <%--Admin--%>
-        <div class="mentor mentor-direction-right" id="developer" data-aos="fade-up" data-aos-duration="1200">
+        <div class="mentor mentor-direction-right" id="developer" data-aos="fade-up" data-aos-duration="200">
             <div class="image">
                 <img src="../res/media/img/developer.jpg" />
             </div>
@@ -563,22 +576,24 @@
     <%--footer--%>
     <section class="footer" id="contact">
         <div class="social">
-            <h3>Follow Us</h3>
+            <h3><i class="fa-solid fa-thumbs-up"></i> Follow Us</h3>
             <div>
-                <asp:HyperLink NavigateUrl="navigateurl" runat="server">Facebook</asp:HyperLink>
-                <asp:HyperLink NavigateUrl="navigateurl" runat="server">Facebook</asp:HyperLink>
-                <asp:HyperLink NavigateUrl="navigateurl" runat="server">Google+</asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-facebook"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-google-plus"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-x-twitter"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-whatsapp"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-instagram"></i></asp:HyperLink>
             </div>
         </div>
         <div class="quick-links">
-            <h3>Contact Us</h3>
+            <h3><i class="fa-solid fa-phone-volume"></i> Contact Us</h3>
             <div>
-                <asp:Label Text="Email : sunriseinfotechsolutionn@gmail.com" runat="server" />
-                <asp:Label Text="Call : 7755890555,7267973767" runat="server" />
+                <p><i class="fa-solid fa-envelope" style="color:var(--hover-bg);"></i> <asp:Label Text="sunriseinfotechsolutionn@gmail.com" runat="server" /></p>
+                <p><i class="fa-solid fa-tty" style="color:var(--hover-bg);"></i> <asp:Label Text="7755890555,7267973767" runat="server" /></p>
             </div>
         </div>
         <div class="address">
-            <h3>Find Us On</h3>
+            <h3><i class="fa-solid fa-location-dot"></i> Find Us On</h3>
             <div>
                 <asp:Label Text="643Ma/288 Mithlesh Sadan Mohibullapur near noubasta pulia p/s Madion" runat="server" />
                 <asp:Label Text="Sitapur road,Luchnow-226021" runat="server" />

@@ -18,9 +18,9 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body style="background: #242424; color: #f1f1f1" onload="loading()">
+<body style="background: #efefef;" onload="loading()">
     <form id="form1" runat="server">
-        <div class="bg-back">
+        <%--<div class="bg-back">
             <div></div>
             <div></div>
             <div></div>
@@ -29,7 +29,7 @@
             <div></div>
             <div></div>
             <div></div>
-        </div>
+        </div>--%>
         <%--preloader--%>
         <div class="preloader" id="preloader"><div class="colorful"></div></div>
         <div id="body-bg"></div>
@@ -37,7 +37,7 @@
         <nav class="navbar navbar-expand-xxl ">
             <div class="container-fluid">
                 <asp:Hyperlink runat="server" CssClass="navbar-brand nav-img" NavigateUrl="~/Home.aspx">
-                    <img src="res/media/img/WhatsApp%20Image%202023-09-27%20at%2000.28.21.jpg" />
+                    <img src="res/media/img/20190708_002647.png" />
                     <label id="navtext">Sunrise Infotech Solution</label></asp:Hyperlink>
                 <%--menu button--%>
                 <label class="icon bg-light" id="icon">
@@ -71,7 +71,7 @@
                             <asp:Hyperlink runat="server" NavigateUrl="~/Help.aspx" CssClass="nav-link"><i class="fa-solid fa-handshake"></i> Help</asp:Hyperlink>
                         </li>
                         <li class="nav-item">
-                            <asp:HyperLink NavigateUrl="~/Login.aspx" runat="server" CssClass="nav-link p-2 rounded" style="background:var(--hover-bg);width:fit-content;"><i class="fa-solid fa-right-to-bracket"></i> Login</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl="~/Login.aspx" runat="server" CssClass="nav-link p-2 rounded" style="background:var(--hover-bg);width:fit-content;color:white"><i class="fa-solid fa-right-to-bracket text-light"></i> Login</asp:HyperLink>
                         </li>
                     </ul>
                 </div>
@@ -84,7 +84,7 @@
         </div>
         <%--footer--%>
         <footer class="rights">
-            <asp:Label class="rights" Text="All © reserved by sunriseinfotechsolution @2017 to till date | by DevelopingTeam" runat="server" />
+            <asp:Label class="rights" Text="All © reserved by sunriseinfotechsolution &copy;2017 to till date | by DevelopingTeam" runat="server" />
         </footer>
     </form>
     <%--script--%>

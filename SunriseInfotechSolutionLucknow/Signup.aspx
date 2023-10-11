@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <section class="signup" style="margin-top:100px;">
+    <section class="signup forms-box" style="margin-top:100px;">
         <h1>Signup</h1>
         <%--row 1--%>
         <div class="forms">
@@ -119,31 +119,30 @@
         <asp:ValidationSummary ID="ValidationSummary1" runat="server" CssClass="d-none" ShowMessageBox="True"/>
     </section>
     <%--footer--%>
-        <section class="footer" id="contact">
-            <div class="social">
-                <h3>Follow us</h3>
-                <div>
-                    <asp:HyperLink NavigateUrl="navigateurl" runat="server">Facebook</asp:HyperLink>
-                    <asp:HyperLink NavigateUrl="navigateurl" runat="server">Facebook</asp:HyperLink>
-                    <asp:HyperLink NavigateUrl="navigateurl" runat="server">Google+</asp:HyperLink>
-                </div>
+    <section class="footer" id="contact">
+        <div class="social">
+            <h3><i class="fa-solid fa-thumbs-up"></i> Follow Us</h3>
+            <div>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-facebook"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-google-plus"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-x-twitter"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-whatsapp"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-instagram"></i></asp:HyperLink>
             </div>
-            <div class="quick-links">
-                <h3>Contact us</h3>
-                <div>
-                    <asp:Label Text="Email : sunriseinfotechsolutionn@gmail.com" runat="server" />
-                    <asp:Label Text="Call : 7755890555,7267973767" runat="server" />
-                </div>
+        </div>
+        <div class="quick-links">
+            <h3><i class="fa-solid fa-phone-volume"></i> Contact Us</h3>
+            <div>
+                <p><i class="fa-solid fa-envelope" style="color:var(--hover-bg);"></i> <asp:Label Text="sunriseinfotechsolutionn@gmail.com" runat="server" /></p>
+                <p><i class="fa-solid fa-tty" style="color:var(--hover-bg);"></i> <asp:Label Text="7755890555,7267973767" runat="server" /></p>
             </div>
-            <div class="address">
-                <h3>Find us</h3>
-                <div>
-                    <asp:Label Text="643Ma/288 Mithlesh Sadan Mohibullapur near noubasta pulia p/s Madion" runat="server" />
-                    <asp:Label Text="Sitapur road,Luchnow-226021" runat="server" />
-                </div>
+        </div>
+        <div class="address">
+            <h3><i class="fa-solid fa-location-dot"></i> Find Us On</h3>
+            <div>
+                <asp:Label Text="643Ma/288 Mithlesh Sadan Mohibullapur near noubasta pulia p/s Madion" runat="server" />
+                <asp:Label Text="Sitapur road,Luchnow-226021" runat="server" />
             </div>
-        </section>
-        <footer class="rights">
-            <asp:Label class="rights" Text="All © reserved by sunriseinfotechsolution @2017 to till date | by DevelopingTeam" runat="server" />
-        </footer>
+        </div>
+    </section>
 </asp:Content>

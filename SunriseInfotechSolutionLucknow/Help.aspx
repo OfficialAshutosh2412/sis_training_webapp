@@ -20,27 +20,30 @@
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Help]"></asp:SqlDataSource>
     </section>
+    <%--footer--%>
     <section class="footer" id="contact">
         <div class="social">
-            <h3>Follow us</h3>
+            <h3><i class="fa-solid fa-thumbs-up"></i> Follow Us</h3>
             <div>
-                <asp:hyperlink navigateurl="navigateurl" runat="server" >Facebook</asp:hyperlink>
-                <asp:hyperlink navigateurl="navigateurl" runat="server" >Facebook</asp:hyperlink>
-                <asp:hyperlink navigateurl="navigateurl" runat="server" >Google+</asp:hyperlink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-facebook"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-google-plus"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-x-twitter"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-whatsapp"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-instagram"></i></asp:HyperLink>
             </div>
         </div>
         <div class="quick-links">
-            <h3>Contact us</h3>
+            <h3><i class="fa-solid fa-phone-volume"></i> Contact Us</h3>
             <div>
-                <asp:label text="Email : sunriseinfotechsolutionn@gmail.com" runat="server" />
-                <asp:label text="Call : 7755890555,7267973767" runat="server" />
+                <p><i class="fa-solid fa-envelope" style="color:var(--hover-bg);"></i> <asp:Label Text="sunriseinfotechsolutionn@gmail.com" runat="server" /></p>
+                <p><i class="fa-solid fa-tty" style="color:var(--hover-bg);"></i> <asp:Label Text="7755890555,7267973767" runat="server" /></p>
             </div>
         </div>
         <div class="address">
-            <h3>Find us</h3>
+            <h3><i class="fa-solid fa-location-dot"></i> Find Us On</h3>
             <div>
-                <asp:label text="643Ma/288 Mithlesh Sadan Mohibullapur near noubasta pulia p/s Madion" runat="server" />
-                <asp:label text="Sitapur road,Luchnow-226021" runat="server" />
+                <asp:Label Text="643Ma/288 Mithlesh Sadan Mohibullapur near noubasta pulia p/s Madion" runat="server" />
+                <asp:Label Text="Sitapur road,Luchnow-226021" runat="server" />
             </div>
         </div>
     </section>
