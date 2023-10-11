@@ -33,14 +33,28 @@
         <%--preloader--%>
         <div class="preloader" id="preloader"><div class="colorful"></div></div>
         <div id="body-bg"></div>
+        <%--theme button--%>
+        <div class="theme">
+            <div onclick="ShowSwitcherPanel()"><i class="fa-solid fa-moon"></i></div>
+        </div>
+        <%--theme switcher--%>
+        <div class="themes theme-hide">
+            <ul>
+                <li id="crimson" onclick="changingToRedTheme()"></li>
+                <li id="blue" onclick="changingToBlueTheme()"></li>
+                <li id="green" onclick="changingToGreenTheme()"></li>
+                <li id="voilet" onclick="changingToVoiletTheme()"></li>
+            </ul>
+            <div class="content"></div>
+        </div>
         <%--navbar--%>
-        <nav class="navbar navbar-expand-xxl ">
+        <nav class="navbar navbar-expand-xxl " id="navs">
             <div class="container-fluid">
                 <asp:Hyperlink runat="server" CssClass="navbar-brand nav-img" NavigateUrl="~/Home.aspx">
                     <img src="res/media/img/20190708_002647.png" />
                     <label id="navtext">Sunrise Infotech Solution</label></asp:Hyperlink>
                 <%--menu button--%>
-                <label class="icon bg-light" id="icon">
+                <label class="icon" id="icon">
                     <i class="fa-solid fa-bars"></i> Menu
                 </label>
                 <%--responsive navbar--%>

@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <%--hero section--%>
     <section class="hero" id="hero">
-        <div class="hero-brand" data-aos="zoom-in-up" data-aos-duration="500">
+        <div class="hero-brand" data-aos="zoom-in-up" data-aos-duration="500" id="hero-brand">
             <h1 class=" fw-lighter" data-aos="zoom-in-up" data-aos-duration="1500">SUNRISE INFOTECH SOLUTION</h1>
             <h3 class="title" data-aos="zoom-in-up" data-aos-duration="2000"><span>WHERE</span><span> Quality Matters</span></h3>
         </div>
