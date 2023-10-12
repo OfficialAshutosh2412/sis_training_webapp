@@ -20,16 +20,6 @@
 </head>
 <body style="background: #efefef;" onload="loading()">
     <form id="form1" runat="server">
-        <%--<div class="bg-back">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>--%>
         <%--preloader--%>
         <div class="preloader" id="preloader"><div class="colorful"></div></div>
         <div id="body-bg"></div>
@@ -44,13 +34,14 @@
                 <li id="blue" onclick="changingToBlueTheme()"></li>
                 <li id="green" onclick="changingToGreenTheme()"></li>
                 <li id="voilet" onclick="changingToVoiletTheme()"></li>
+                <li id="gray" onclick="changingToGrayTheme()"></li>
             </ul>
             <div class="content"></div>
         </div>
         <%--navbar--%>
         <nav class="navbar navbar-expand-xxl " id="navs">
             <div class="container-fluid">
-                <asp:Hyperlink runat="server" CssClass="navbar-brand nav-img" NavigateUrl="~/Home.aspx">
+                <asp:Hyperlink runat="server" CssClass="navbar-brand nav-img text-dark" NavigateUrl="~/Home.aspx">
                     <img src="res/media/img/20190708_002647.png" />
                     <label id="navtext">Sunrise Infotech Solution</label></asp:Hyperlink>
                 <%--menu button--%>
@@ -85,7 +76,7 @@
                             <asp:Hyperlink runat="server" NavigateUrl="~/Help.aspx" CssClass="nav-link"><i class="fa-solid fa-handshake"></i> Help</asp:Hyperlink>
                         </li>
                         <li class="nav-item">
-                            <asp:HyperLink NavigateUrl="~/Login.aspx" runat="server" CssClass="nav-link p-2 rounded" style="background:var(--hover-bg);width:fit-content;color:white"><i class="fa-solid fa-right-to-bracket text-light"></i> Login</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl="~/Login.aspx" runat="server" CssClass="nav-link p-2 rounded" style="background:var(--hover-bg);width:fit-content;color:white !important"><i class="fa-solid fa-right-to-bracket text-light"></i> Login</asp:HyperLink>
                         </li>
                     </ul>
                 </div>

@@ -13,20 +13,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="../res/css/style.min.css" rel="stylesheet" />
+    <link href="../res/css/style.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body style="background:#092533;color:#dcdcdc;">
+<body onload="loading()" style="background:#303030;color:white;">
     <form id="form1" runat="server">
-        <i class="fa-solid fa-gear fa-spin" style="position:fixed;z-index:-10;font-size:30rem;right:-300px;bottom:0"></i>
+        <%--preloader--%>
+        <div class="preloader" id="preloader"><div class="colorful"></div></div>
+        <%--theme button--%>
+        <div class="theme">
+            <div onclick="ShowSwitcherPanel()"><i class="fa-solid fa-moon"></i></div>
+        </div>
+        <%--theme switcher--%>
+        <div class="themes theme-hide">
+            <ul>
+                <li id="crimson" onclick="changingToRedTheme()"></li>
+                <li id="pink" style="background:#94217f;" onclick="changingToPinkTheme()"></li>
+                <li id="green" onclick="changingToGreenTheme()"></li>
+                <li id="voilet" style="background:#246de3;" onclick="changingToSkyTheme()"></li>
+                <li id="gray" style="background:#e0de53;" onclick="changingToYellowTheme()"></li>
+            </ul>
+            <div class="content"></div>
+        </div>
+        <i class="fa-solid fa-gear fa-spin" style="position:fixed;z-index:-10;font-size:50rem;right:-600px;bottom:50px;color:var(--hover-bg);"></i>
         <%--navbar--%>
-        <nav class="navbar navbar-expand-lg" style="background:#09696c">
+        <nav class="navbar navbar-expand-lg admin-nav-shadow admin-nav-shadow-2">
             <div class="container-fluid">
-                <asp:Hyperlink runat="server"  CssClass="navbar-brand nav-img" NavigateUrl="~/Admin/Admin_home.aspx" style="cursor:pointer"><img src="../res/media/img/WhatsApp%20Image%202023-09-27%20at%2000.28.21.jpg" /><label  style="cursor:pointer" class="brand-name">Sunrise Infotech Solution</label></asp:Hyperlink>
-                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <asp:Hyperlink runat="server"  CssClass="navbar-brand nav-img" NavigateUrl="~/Admin/Admin_home.aspx" style="cursor:pointer"><img src="../res/media/img/20190708_002647.png" /><label  style="cursor:pointer" class="brand-name">Sunrise Infotech Solution</label></asp:Hyperlink>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -54,9 +71,11 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-        <footer style="background:#09696c;" class="p-3 text-center">
+        <footer style="background:#171717;color:#c6c6c6" class="p-3 text-center">
             All Rights are Reserved &copy;SIS 2023
         </footer>
     </form>
+
+    <script src="../res/js/js_file.js"></script>
 </body>
 </html>

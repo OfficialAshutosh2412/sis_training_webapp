@@ -9,11 +9,13 @@
             <p><asp:HyperLink NavigateUrl="~/Registered/EditProfile.aspx" runat="server" style="color:var(--hover-bg);font-size:1.5rem" ToolTip="edit profile" ><i class="fa-solid fa-user-pen"></i></asp:HyperLink></p>
         </div>
         <div class="profile-container">
-            <div class="pro-img">
+            <section class="d-flex justify-content-center">
+                <div class="pro-img">
                 <asp:HyperLink ID="imglink" runat="server">
                     <asp:Image ID="Image1" runat="server" />
                 </asp:HyperLink>
             </div>
+            </section>
             <div class="pro-name">
                 <asp:Label ID="name" runat="server" /><br />
                 <small style="font-size:12pt;margin-top:-100px;"><asp:Label ID="dob" runat="server" /></small>

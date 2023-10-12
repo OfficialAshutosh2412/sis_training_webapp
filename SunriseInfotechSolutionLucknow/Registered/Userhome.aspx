@@ -3,6 +3,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section class="userhome">
-        <h1>Welcome, <asp:Label ID="username" runat="server" /></h1>
+        <h1 class="text-animation2">Welcome, <asp:Label ID="username" runat="server" /></h1>
     </section>
 </asp:Content>

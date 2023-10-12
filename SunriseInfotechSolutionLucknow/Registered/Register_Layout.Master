@@ -11,22 +11,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="../res/css/style.min.css" rel="stylesheet" />
+    <link href="../res/css/style.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body onload="loading()" style="background:#242424;color:#f1f1f1" >
+<body onload="loading()"style="background: #efefef;" >
     <form id="form1" runat="server">
         <%--preloader--%>
         <div class="preloader" id="preloader"><div class="colorful"></div></div>
+        <%--theme button--%>
+        <div class="theme">
+            <div onclick="ShowSwitcherPanel()"><i class="fa-solid fa-moon"></i></div>
+        </div>
+        <%--theme switcher--%>
+        <div class="themes theme-hide">
+            <ul>
+                <li id="crimson" onclick="changingToRedTheme()"></li>
+                <li id="blue" onclick="changingToBlueTheme()"></li>
+                <li id="green" onclick="changingToGreenTheme()"></li>
+                <li id="voilet" onclick="changingToVoiletTheme()"></li>
+                <li id="gray" onclick="changingToGrayTheme()"></li>
+            </ul>
+            <div class="content"></div>
+        </div>
         <%--navbar--%>
-        <nav class="navbar navbar-expand-xxl">
+        <nav class="navbar navbar-expand-xxl" id="navs">
             <div class="container-fluid">
-                <asp:Hyperlink runat="server"  CssClass="navbar-brand nav-img" NavigateUrl="~/Registered/Userhome.aspx" style="cursor:pointer"><img src="../res/media/img/WhatsApp%20Image%202023-09-27%20at%2000.28.21.jpg" /><label  style="cursor:pointer" class="brand-name">Sunrise Infotech Solution</label></asp:Hyperlink>
+                <asp:Hyperlink runat="server"  CssClass="navbar-brand nav-img" NavigateUrl="~/Registered/Userhome.aspx" style="cursor:pointer"><img src="../res/media/img/20190708_002647.png" /><label  style="cursor:pointer" class="brand-name">Sunrise Infotech Solution</label></asp:Hyperlink>
                 <%--menu button--%>
-                <label class="icon bg-light" id="icon">
+                <label class="icon" id="icon">
                     <i class="fa-solid fa-bars"></i> Menu
                 </label>
                 <%--responsive navbar--%>
@@ -45,7 +60,7 @@
                             <asp:HyperLink NavigateUrl="~/Registered/Feedback.aspx" runat="server" CssClass="nav-link"><i class="fa-solid fa-hand-holding-heart"></i> Feedback</asp:HyperLink>
                         </li>
                         <li class="nav-item">
-                            <asp:Button Text="Logout" runat="server" ValidationGroup="fix" CssClass="nav-link p-2 rounded" style="background:var(--hover-bg);width:fit-content;" OnClick="Unnamed3_Click"/>
+                            <asp:Button Text="Logout" runat="server" ValidationGroup="fix" CssClass="nav-link p-2 rounded" style="background:var(--hover-bg);width:fit-content;color:white;" OnClick="Unnamed3_Click"/>
                         </li>
                     </ul>
                 </div>
@@ -57,30 +72,32 @@
             </asp:ContentPlaceHolder>
         </div>
         <%--footer--%>
-        <section class="footer" id="contact">
-            <div class="social">
-                <h3>Follow us</h3>
-                <div>
-                    <asp:HyperLink NavigateUrl="navigateurl" runat="server">Facebook</asp:HyperLink>
-                    <asp:HyperLink NavigateUrl="navigateurl" runat="server">Twitter</asp:HyperLink>
-                    <asp:HyperLink NavigateUrl="navigateurl" runat="server">Google+</asp:HyperLink>
-                </div>
+    <section class="footer" id="contact">
+        <div class="social">
+            <h3><i class="fa-solid fa-thumbs-up"></i> Follow Us</h3>
+            <div>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-facebook"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-google-plus"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-x-twitter"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-whatsapp"></i></asp:HyperLink>
+                <asp:HyperLink NavigateUrl="navigateurl" runat="server"><i class="fa-brands fa-square-instagram"></i></asp:HyperLink>
             </div>
-            <div class="quick-links">
-                <h3>Contact us</h3>
-                <div>
-                    <asp:Label Text="Email : sunriseinfotechsolutionn@gmail.com" runat="server" />
-                    <asp:Label Text="Call : 7755890555,7267973767" runat="server" />
-                </div>
+        </div>
+        <div class="quick-links">
+            <h3><i class="fa-solid fa-phone-volume"></i> Contact Us</h3>
+            <div>
+                <p><i class="fa-solid fa-envelope" style="color:var(--hover-bg);"></i> <asp:Label Text="sunriseinfotechsolutionn@gmail.com" runat="server" /></p>
+                <p><i class="fa-solid fa-tty" style="color:var(--hover-bg);"></i> <asp:Label Text="7755890555,7267973767" runat="server" /></p>
             </div>
-            <div class="address">
-                <h3>Find us</h3>
-                <div>
-                    <asp:Label Text="643Ma/288 Mithlesh Sadan Mohibullapur near noubasta pulia p/s Madion" runat="server" />
-                    <asp:Label Text="Sitapur road,Luchnow-226021" runat="server" />
-                </div>
+        </div>
+        <div class="address">
+            <h3><i class="fa-solid fa-location-dot"></i> Find Us On</h3>
+            <div>
+                <asp:Label Text="643Ma/288 Mithlesh Sadan Mohibullapur near noubasta pulia p/s Madion" runat="server" />
+                <asp:Label Text="Sitapur road,Luchnow-226021" runat="server" />
             </div>
-        </section>
+        </div>
+    </section>
         <footer class="rights">
             <asp:Label class="rights" Text="All © reserved by sunriseinfotechsolution @2017 to till date | by DevelopingTeam" runat="server" />
         </footer>

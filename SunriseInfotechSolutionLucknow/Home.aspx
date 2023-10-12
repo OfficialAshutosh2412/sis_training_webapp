@@ -6,8 +6,10 @@
     <%--hero section--%>
     <section class="hero" id="hero">
         <div class="hero-brand" data-aos="zoom-in-up" data-aos-duration="500" id="hero-brand">
-            <h1 class=" fw-lighter" data-aos="zoom-in-up" data-aos-duration="1500">SUNRISE INFOTECH SOLUTION</h1>
-            <h3 class="title" data-aos="zoom-in-up" data-aos-duration="2000"><span>WHERE</span><span> Quality Matters</span></h3>
+            <h1 class=" fw-lighter " data-aos="zoom-in-up" data-aos-duration="1500">SUNRISE INFOTECH SOLUTION</h1>
+            <h2 class="text-animation" data-aos="zoom-in-up" data-aos-duration="2000">
+                <asp:Label Text="WHERE" runat="server" />
+                <asp:Label Text="Quality Matters" runat="server" /></h2>
         </div>
         <div class="hero-img">
             <img src="res/media/img/Programming.gif" class="hero-gif"/>

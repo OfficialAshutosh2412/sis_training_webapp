@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section class="signin">
-        <section class="forms-box" style="backdrop-filter: blur(100px); width: 100%; padding: 1%; border-radius: 10px;">
+        <section class="forms-box" style="width: 100%; padding: 1%; border-radius: 10px;">
             <h1>Signin</h1>
             <div class="forms">
                 <div class="form-item">
@@ -18,9 +18,9 @@
                 <div class="form-item">
                     <p>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="fill password field" ForeColor="#FF3300" ControlToValidate="password">*</asp:RequiredFieldValidator><i class="fa-solid fa-key"></i>
-                        <asp:Label Text="password" runat="server" />
+                        <asp:Label Text="password" runat="server"/>
                     </p>
-                    <asp:TextBox ID="password" runat="server" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="password" runat="server" TextMode="Password" placeholder="enter your password here..."></asp:TextBox>
                 </div>
             </div>
             <div class="forms">

@@ -2,14 +2,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="status mb-3">
-        <h1 class="p-5 mt-5"><i class="fa-solid fa-award"></i>Student Certifications</h1>
+    <section class="status-container">
+        <div class="status">
+        <h1 class="p-5"><i class="fa-solid fa-award"></i> Student Certifications</h1>
         <div class="form-item">
             <p>
                 <i class="fa-solid fa-envelope"></i>
                 <asp:Label Text="Select Student Email" runat="server" />
             </p>
-            <asp:DropDownList runat="server" ID="email" AppendDataBoundItems="True" DataSourceID="SqlDataSource1" DataTextField="Email" DataValueField="Email">
+            <asp:DropDownList runat="server" ID="email" AppendDataBoundItems="True" DataSourceID="SqlDataSource1" DataTextField="Email" DataValueField="Email" style="color: white !important; background: #808080">
                 <asp:ListItem Selected="True">--select--</asp:ListItem>
             </asp:DropDownList>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Email] FROM [Signup] WHERE ([Type] = @Type)">
@@ -23,10 +24,11 @@
                 <i class="fa-solid fa-image"></i>
                 <asp:Label Text="Certificate of student" runat="server" />
             </p>
-            <asp:FileUpload runat="server" ID="FileUpload1"></asp:FileUpload>
+            <asp:FileUpload runat="server" ID="FileUpload1" style="color: white !important; background: #808080"></asp:FileUpload>
         </div>
         <div class="form-item mt-3" style="width: fit-content">
             <asp:Button ID="Button1" runat="server" Text="upload now !" CssClass="submit p-2" OnClick="Button1_Click" />
         </div>
     </div>
+    </section>
 </asp:Content>

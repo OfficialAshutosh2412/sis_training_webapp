@@ -3,16 +3,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1 class="p-3"><i class="fa-solid fa-medal" style="color: var(--hover-bg); margin-top: 50px;"></i>Your Certifications</h1>
     <%--certificate and submittion form--%>
     <section class="certificate-container">
         <div class="certificate">
             <div class="status-heading">
-                <h2>Your training status is
-                <asp:Label ID="satuslabel" runat="server" />
-                </h2>
+                <div class="status-left">
+                    <h2>Your training status is
+                        <asp:Label ID="satuslabel" runat="server" />
+                    </h2>
+                </div>
             </div>
-            <div class="signup">
+            <div class="signup p-2">
                 <h3>Document submit for certificate generation.</h3>
                 <div class="form-item">
                     <asp:Label Text="Your Adhaar Card (in pdf format)" runat="server" />
@@ -35,7 +36,6 @@
             <div>
                 <asp:ImageButton ID="ImageButton1" Style="width: 150px" ImageUrl="~/Admin/Certificate_Images/preview.png" runat="server" OnClick="ImageButton1_Click" /></div>
         </div>
-        <hr />
         <%--achieved certificate--%>
         <div class="achieve">
             <div><h1>Your Achieved Certificates</h1></div>

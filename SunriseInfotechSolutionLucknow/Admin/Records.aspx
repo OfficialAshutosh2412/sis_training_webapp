@@ -10,7 +10,7 @@
         <a href="#help">Help</a>
         <a href="#feedback">Feedback</a>
     </section>
-    <section class="users" id="users">
+    <section class="users" style="margin-top:100px" id="users">
         <h2>Students information</h2>
         <div class="grid-scroll">
             <asp:GridView ID="GridView1" CssClass="table table-secondary" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource3">
@@ -89,17 +89,36 @@
     <section class="insession" id="insession">
         <h2>Student in Training Period</h2>
         <div class="grid-scroll">
-            <asp:GridView ID="GridView3" CssClass="table table-secondary" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource5">
+            <asp:GridView ID="GridView3" CssClass="table table-dark" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource5" AllowPaging="True" AllowSorting="True">
                 <Columns>
-                    <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
-                    <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
-                    <asp:BoundField DataField="Progress" HeaderText="Progress" SortExpression="Progress" />
+                    <asp:CommandField ButtonType="Image" CancelImageUrl="~/res/media/icons/close.png" CancelText="" DeleteImageUrl="~/res/media/icons/delete.png" DeleteText="" EditImageUrl="~/res/media/icons/edit.png" EditText="" NewText="" SelectText="" ShowDeleteButton="True" ShowEditButton="True" UpdateImageUrl="~/res/media/icons/check-mark.png" UpdateText="" />
+                    <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" >
+                    <HeaderStyle ForeColor="White" />
+                    </asp:BoundField>
+                    <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" >
+                    <HeaderStyle ForeColor="White" />
+                    </asp:BoundField>
+                    <asp:BoundField DataField="Progress" HeaderText="Progress" SortExpression="Progress" >
+                    <HeaderStyle ForeColor="White" />
+                    </asp:BoundField>
                 </Columns>
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Status] WHERE ([Progress] = @Progress)">
+            <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Status] WHERE ([Progress] = @Progress)" DeleteCommand="DELETE FROM [Status] WHERE [Id] = @Id" InsertCommand="INSERT INTO [Status] ([Email], [Progress]) VALUES (@Email, @Progress)" UpdateCommand="UPDATE [Status] SET [Email] = @Email, [Progress] = @Progress WHERE [Id] = @Id">
+                <DeleteParameters>
+                    <asp:Parameter Name="Id" Type="Int32" />
+                </DeleteParameters>
+                <InsertParameters>
+                    <asp:Parameter Name="Email" Type="String" />
+                    <asp:Parameter Name="Progress" Type="String" />
+                </InsertParameters>
                 <SelectParameters>
                     <asp:Parameter DefaultValue="in progress" Name="Progress" Type="String" />
                 </SelectParameters>
+                <UpdateParameters>
+                    <asp:Parameter Name="Email" Type="String" />
+                    <asp:Parameter Name="Progress" Type="String" />
+                    <asp:Parameter Name="Id" Type="Int32" />
+                </UpdateParameters>
             </asp:SqlDataSource>
         </div>
     </section>
