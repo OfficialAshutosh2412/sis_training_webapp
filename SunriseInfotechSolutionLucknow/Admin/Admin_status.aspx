@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="status-container">
         <div class="status">
-            <h1 class="p-5"><i class="fa-solid fa-chart-simple"></i> Student Status</h1>
+            <h1 class="p-1"><i class="fa-solid fa-chart-simple"></i> Student Status</h1>
             <div class="form-item">
                 <p>
                     <i class="fa-solid fa-envelope"></i>

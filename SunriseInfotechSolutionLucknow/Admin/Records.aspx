@@ -13,7 +13,7 @@
     <section class="users" style="margin-top:100px" id="users">
         <h2>Students information</h2>
         <div class="grid-scroll">
-            <asp:GridView ID="GridView1" CssClass="table table-secondary" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource3">
+            <asp:GridView ID="GridView1" CssClass="table table-dark" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource3">
                 <Columns>
                     <asp:TemplateField HeaderText="Profile Image" SortExpression="DP">
                         <EditItemTemplate>
@@ -52,7 +52,7 @@
     <section class="admin" id="admin">
         <h2>Admin information</h2>
         <div class="grid-scroll">
-            <asp:GridView ID="GridView2" CssClass="table table-secondary" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource4">
+            <asp:GridView ID="GridView2" CssClass="table table-dark" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource4">
                 <Columns>
                     <asp:TemplateField HeaderText="Profile Image" SortExpression="DP">
                         <EditItemTemplate>
@@ -86,7 +86,10 @@
             </asp:SqlDataSource>
         </div>
     </section>
-    <section class="insession" id="insession">
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
+            <section class="insession" id="insession">
         <h2>Student in Training Period</h2>
         <div class="grid-scroll">
             <asp:GridView ID="GridView3" CssClass="table table-dark" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource5" AllowPaging="True" AllowSorting="True">
@@ -122,27 +125,53 @@
             </asp:SqlDataSource>
         </div>
     </section>
-    <section class="final" id="final">
+        </ContentTemplate>
+    </asp:UpdatePanel>
+    <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+        <ContentTemplate>
+            <section class="final" id="final">
         <h2>Certified Students</h2>
         <div class="grid-scroll">
-            <asp:GridView ID="GridView4" CssClass="table table-secondary w-100" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource6" Width="238px">
+            <asp:GridView ID="GridView4" CssClass="table table-dark w-100" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource6" Width="238px" AllowPaging="True" AllowSorting="True">
                 <Columns>
-                    <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
-                    <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
-                    <asp:BoundField DataField="Progress" HeaderText="Progress" SortExpression="Progress" />
+                    <asp:CommandField ButtonType="Image" CancelImageUrl="~/res/media/icons/close.png" CancelText="" DeleteImageUrl="~/res/media/icons/delete.png" DeleteText="" EditImageUrl="~/res/media/icons/edit.png" EditText="" ShowDeleteButton="True" ShowEditButton="True" UpdateImageUrl="~/res/media/icons/check-mark.png" UpdateText="" />
+                    <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" >
+                    <HeaderStyle ForeColor="White" />
+                    </asp:BoundField>
+                    <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" >
+                    <HeaderStyle ForeColor="White" />
+                    </asp:BoundField>
+                    <asp:BoundField DataField="Progress" HeaderText="Progress" SortExpression="Progress" >
+                    <HeaderStyle ForeColor="White" />
+                    </asp:BoundField>
                 </Columns>
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Status] WHERE ([Progress] = @Progress)">
+            <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Status] WHERE ([Progress] = @Progress)" DeleteCommand="DELETE FROM [Status] WHERE [Id] = @Id" InsertCommand="INSERT INTO [Status] ([Email], [Progress]) VALUES (@Email, @Progress)" UpdateCommand="UPDATE [Status] SET [Email] = @Email, [Progress] = @Progress WHERE [Id] = @Id">
+                <DeleteParameters>
+                    <asp:Parameter Name="Id" Type="Int32" />
+                </DeleteParameters>
+                <InsertParameters>
+                    <asp:Parameter Name="Email" Type="String" />
+                    <asp:Parameter Name="Progress" Type="String" />
+                </InsertParameters>
                 <SelectParameters>
                     <asp:Parameter DefaultValue="completed" Name="Progress" Type="String" />
                 </SelectParameters>
+                <UpdateParameters>
+                    <asp:Parameter Name="Email" Type="String" />
+                    <asp:Parameter Name="Progress" Type="String" />
+                    <asp:Parameter Name="Id" Type="Int32" />
+                </UpdateParameters>
             </asp:SqlDataSource>
         </div>
     </section>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+    
     <section class="help" id="help">
         <h2>Help Queries</h2>
         <div class="grid-scroll">
-            <asp:GridView ID="GridView5" CssClass="table table-secondary w-100" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource7">
+            <asp:GridView ID="GridView5" CssClass="table table-dark w-100" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource7">
                 <Columns>
                     <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
                     <asp:BoundField DataField="Questions" HeaderText="Questions" SortExpression="Questions" />
@@ -155,7 +184,7 @@
     <section class="feedback" id="feedback">
         <h2>Students Feedback</h2>
         <div class="grid-scroll">
-            <asp:GridView ID="GridView6" CssClass="table table-secondary w-100" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource8">
+            <asp:GridView ID="GridView6" CssClass="table table-dark w-100" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource8">
                 <Columns>
                     <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
                     <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />

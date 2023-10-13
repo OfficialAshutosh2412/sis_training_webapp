@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section class="status-container">
         <div class="status">
-        <h1 class="p-5"><i class="fa-solid fa-award"></i> Student Certifications</h1>
+        <h1 class="p-1"><i class="fa-solid fa-award"></i> Student Certifications</h1>
         <div class="form-item">
             <p>
                 <i class="fa-solid fa-envelope"></i>

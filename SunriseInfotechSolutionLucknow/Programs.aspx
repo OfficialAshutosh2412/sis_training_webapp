@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <section class="programs"  style="width:100%;text-align: justify; margin-top: 6%;">
+    <section class="programs">
         <div class="rounded about-sections w-100">
             <h1 class="p-4 bg-body-secondary  rounded">Project Based Industrial Summer Training</h1>
             <p>

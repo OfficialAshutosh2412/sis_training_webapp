@@ -43,8 +43,10 @@
         <nav class="navbar navbar-expand-lg admin-nav-shadow admin-nav-shadow-2">
             <div class="container-fluid">
                 <asp:Hyperlink runat="server"  CssClass="navbar-brand nav-img" NavigateUrl="~/Admin/Admin_home.aspx" style="cursor:pointer"><img src="../res/media/img/20190708_002647.png" /><label  style="cursor:pointer" class="brand-name">Sunrise Infotech Solution</label></asp:Hyperlink>
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menu">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" style="background:var(--hover-bg) !important;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menu">
+                    <label class="icon" id="icon">
+                    <i class="fa-solid fa-bars"></i> Menu
+                </label>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">

@@ -74,6 +74,7 @@
     <Content Include="Admin\Admin_status.aspx" />
     <Content Include="Admin\Certificate_Images\preview.png" />
     <Content Include="Admin\Records.aspx" />
+    <Content Include="Announcements.aspx" />
     <Content Include="App_Data\sunriseInfotechSolution.mdf" />
     <Content Include="App_Data\sunriseInfotechSolution_log.ldf">
       <DependentUpon>sunriseInfotechSolution.mdf</DependentUpon>
@@ -122,10 +123,12 @@
     <Content Include="res\media\img\hero-img.png" />
     <Content Include="res\media\img\java.png" />
     <Content Include="res\media\img\jsp.png" />
+    <Content Include="res\media\img\leaf.png" />
     <Content Include="res\media\img\matlab.jpg" />
     <Content Include="res\media\img\mentor 1.jpg" />
     <Content Include="res\media\img\PngItem_1128687.png" />
     <Content Include="res\media\img\PngItem_6859977.png" />
+    <Content Include="res\media\img\pngwing.com%281%29.png" />
     <Content Include="res\media\img\pngwing.com.png" />
     <Content Include="res\media\img\Programming.gif" />
     <Content Include="res\media\img\python.png" />
@@ -186,6 +189,13 @@
     </Compile>
     <Compile Include="Admin\Records.aspx.designer.cs">
       <DependentUpon>Records.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Announcements.aspx.cs">
+      <DependentUpon>Announcements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Announcements.aspx.designer.cs">
+      <DependentUpon>Announcements.aspx</DependentUpon>
     </Compile>
     <Compile Include="ConnectionStringFile.cs" />
     <Compile Include="ErrorPage.aspx.cs">

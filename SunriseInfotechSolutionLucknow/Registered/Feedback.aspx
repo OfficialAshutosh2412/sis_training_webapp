@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <section class="signin" style="margin-top: 30px;">
+    <section class="signin">
         <section class="forms-box" style="width: 100%; padding: 1%; border-radius: 10px;">
             <h1><i class="fa-solid fa-hand-holding-heart"></i>Feedback</h1>
             <div class="forms">
@@ -33,7 +33,7 @@
                         <i class="fa-solid fa-feather"></i>
                         <asp:Label Text="Your words" runat="server" />
                     </p>
-                    <asp:TextBox ID="words" runat="server" TextMode="MultiLine" Rows="4"></asp:TextBox>
+                    <asp:TextBox ID="words" runat="server" TextMode="MultiLine" Rows="1"></asp:TextBox>
                 </div>
             </div>
             <div class="forms">

@@ -60,7 +60,7 @@
                             <asp:HyperLink NavigateUrl="~/Registered/Feedback.aspx" runat="server" CssClass="nav-link"><i class="fa-solid fa-hand-holding-heart"></i> Feedback</asp:HyperLink>
                         </li>
                         <li class="nav-item">
-                            <asp:Button Text="Logout" runat="server" ValidationGroup="fix" CssClass="nav-link p-2 rounded" style="background:var(--hover-bg);width:fit-content;color:white;" OnClick="Unnamed3_Click"/>
+                            <asp:Button Text="Logout" runat="server" ValidationGroup="fix" CssClass="nav-link p-2 rounded text-light" style="background:var(--hover-bg);width:fit-content;color:white !important;" OnClick="Unnamed3_Click"/>
                         </li>
                     </ul>
                 </div>

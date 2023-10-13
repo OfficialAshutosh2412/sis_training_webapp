@@ -24,8 +24,18 @@
         <div class="preloader" id="preloader"><div class="colorful"></div></div>
         <div id="body-bg"></div>
         <%--theme button--%>
-        <div class="theme">
+        <div class="theme" title="themes">
             <div onclick="ShowSwitcherPanel()"><i class="fa-solid fa-moon"></i></div>
+        </div>
+        <%--whatsapp button--%>
+        <div class="theme whatsapp" title="connect with us">
+            <div>
+                <asp:HyperLink NavigateUrl="https://wa.link/qeqn10" runat="server" cssclass="text-light"><i class="fa-brands fa-whatsapp"></i></asp:HyperLink></div>
+        </div>
+        <%--announcement button--%>
+        <div class="theme announcement" title="announcements">
+            <div>
+                <asp:HyperLink runat="server" cssclass="text-light" NavigateUrl="~/Announcements.aspx"><i class="fa-solid fa-bullhorn"></i></asp:HyperLink></div>
         </div>
         <%--theme switcher--%>
         <div class="themes theme-hide">
