@@ -40,7 +40,9 @@ namespace SunriseInfotechSolutionLucknow.Registered
                 {
                     string imgpath = "../Admin/Certificate_Images/";
                     cert.ImageUrl = imgpath + dtr2.Rows[j]["Certificate"].ToString();
-                    cerlink.NavigateUrl = imgpath + dtr2.Rows[j]["Certificate"].ToString();
+                    cerlink1.NavigateUrl = imgpath + dtr2.Rows[j]["Certificate"].ToString();
+                    cerlink2.NavigateUrl = imgpath + dtr2.Rows[j]["Certificate"].ToString();
+                    cerlink3.NavigateUrl = imgpath + dtr2.Rows[j]["Certificate"].ToString();
                 }
                 con.Close();
             }

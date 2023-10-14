@@ -13,7 +13,7 @@
                         <i class="fa-solid fa-pen-fancy"></i>
                         <asp:Label Text="Your name" runat="server" />
                     </p>
-                    <asp:TextBox ID="name" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="name" runat="server" ReadOnly="true"></asp:TextBox>
                 </div>
             </div>
             <div class="forms">
@@ -23,7 +23,7 @@
                         <i class="fa-solid fa-envelope"></i>
                         <asp:Label Text="Email" runat="server" />
                     </p>
-                    <asp:TextBox ID="email" runat="server" TextMode="Email"></asp:TextBox>
+                    <asp:TextBox ID="email" runat="server" TextMode="Email" ReadOnly="true"></asp:TextBox>
                 </div>
             </div>
             <div class="forms">

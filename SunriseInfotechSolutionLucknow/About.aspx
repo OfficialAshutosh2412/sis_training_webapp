@@ -17,7 +17,7 @@
                 <li>IT software solutions and services</li>
                 <li>Custom software and application development</li>
             </ul>
-            <asp:HyperLink NavigateUrl="~/res/media/files/sunfinal.pdf" runat="server" Style="color: var(--hover-bg)"><i class="fa-solid fa-download"></i> Download Brochure</asp:HyperLink>
+            <asp:HyperLink NavigateUrl="~/res/media/files/sunfinal.pdf" download="brochure_SIS" runat="server" Style="color: var(--hover-bg)"><i class="fa-solid fa-download"></i> Download Brochure</asp:HyperLink>
         </section>
         <%--box2--%>
         <section class="about-sections">

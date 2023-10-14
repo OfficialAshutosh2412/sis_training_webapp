@@ -60,13 +60,13 @@ namespace SunriseInfotechSolutionLucknow.Registered
         protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
 
         /// <summary>
-        /// cerlink control.
+        /// cerlink1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink cerlink;
+        protected global::System.Web.UI.WebControls.HyperLink cerlink1;
 
         /// <summary>
         /// cert control.
@@ -76,5 +76,23 @@ namespace SunriseInfotechSolutionLucknow.Registered
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image cert;
+
+        /// <summary>
+        /// cerlink3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink cerlink3;
+
+        /// <summary>
+        /// cerlink2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink cerlink2;
     }
 }

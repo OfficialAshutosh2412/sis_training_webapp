@@ -402,25 +402,23 @@ input::placeholder{
     width: 100%;
     height: 400px;
     background: var(--hover-bg);
-    color:black;
+    color:white !important;
     transition: 0.4s all ease-in-out;
     transform: translateY(100%);
-    opacity: 0;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     padding:5px;
 }
-    .course-item:hover .item-title {
-        
-        opacity:0
+    .item-data h5{
+        color:white !important;
     }
-.course-item:hover .item-data {
-    transform: translateY(0%);
-    opacity: 1;
-    color: white
-}
+    .course-item:hover .item-data {
+        transform: translateY(0%);
+        opacity: 1;
+        color: white;
+    }
 .course-item .item-material div{
     display:flex;
     width:100%;
@@ -832,7 +830,7 @@ textarea {
     width: 0ch;
     overflow: hidden;
     white-space: nowrap;
-    animation: text2 4s steps(25) infinite alternate;
+    animation: text2 10s steps(25) infinite alternate;
     border-right: 3px solid white;
 }
 
@@ -931,16 +929,46 @@ textarea {
             .certificate  .form-item{
                 margin-top:20px;
             }
-.preview {
-    height:fit-content;
-    border-radius: 19px;
-    background: #efefef;
-    box-shadow: -8px 8px 26px #cecece, 8px -8px 26px #ffffff;
-    display: flex;
-    margin-top: 50px;
-    padding: 2%;
-    flex-direction: row-reverse;
-}
+
+
+                 .cert-share{
+                    padding:1%;
+                }
+                    .cert-share a{
+                        text-decoration:none;
+                    }
+                    .cert-share button, .downloadBtn {
+                        width: 40px;
+                        height: 40px;
+                        border: none;
+                        background: #ffffff;
+                        display: flex;
+                        justify-content: center;
+                        cursor: pointer;
+                        align-items: center;
+                        border-radius: 5px;
+                        color: var(--hover-bg);
+                        margin: 3px;
+                    }
+                        .cert-share button:hover, .cert-share .downloadBtn:hover {
+                            color: #000000
+                        }
+                         .cert-share  {
+                            color: white;
+                            margin: 2px;
+                            
+                        }
+
+                        .preview {
+                            height: fit-content;
+                            border-radius: 19px;
+                            background: #efefef;
+                            box-shadow: -8px 8px 26px #cecece, 8px -8px 26px #ffffff;
+                            display: flex;
+                            margin-top: 50px;
+                            padding: 2%;
+                            flex-direction: row-reverse;
+                        }
                 .preview div {
                     height:100%;
                     display: flex;
@@ -956,6 +984,7 @@ textarea {
     display: flex;
     height:fit-content;
     margin-top: 50px;
+    justify-content:space-between;
     padding: 2%;
     color:white;
     flex-direction: row;
@@ -964,14 +993,18 @@ textarea {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
         padding: 2%;
+        text-align:center;
     }
-.user-feedback {
-    border-radius: 19px;
-    background: #efefef;
-    box-shadow: -8px 8px 26px #cecece, 8px -8px 26px #ffffff;
-}       
+        .achieve div .cert-share{
+            width:100%;
+            text-align:center;
+        }
+        .user-feedback {
+            border-radius: 19px;
+            background: #efefef;
+            box-shadow: -8px 8px 26px #cecece, 8px -8px 26px #ffffff;
+        }       
     /*admin grids*/
     .grid-scroll {
         overflow: scroll;

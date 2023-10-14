@@ -39,11 +39,36 @@
         <%--achieved certificate--%>
         <div class="achieve">
             <div><h1>Your Achieved Certificates</h1></div>
-            <div>
-                <asp:HyperLink ID="cerlink" runat="server">
-                    <asp:Image ID="cert" runat="server" />
+            <div class="d-block">
+                <asp:HyperLink ID="cerlink1" runat="server">
+                    <div>
+                        <asp:Image ID="cert" runat="server" />
+                    </div>
                 </asp:HyperLink>
+                <div class="cert-share">
+                    <asp:HyperLink ID="cerlink3" CssClass="downloadBtn" ToolTip="preview" runat="server" ><i class="fa-solid fa-eye"></i></asp:HyperLink>
+                    <asp:HyperLink ID="cerlink2" CssClass="downloadBtn" download="your_e-certificate" ToolTip="download" runat="server" ><i class="fa-solid fa-arrow-down"></i></asp:HyperLink>
+                    <button type="button" title="share" id="share"><i class="fa-solid fa-share-nodes"></i></button>
+                </div>
             </div>
         </div>
     </section>
+
+    <script>
+        const shareBtn = document.querySelector("#share");
+        shareBtn.addEventListener("click", (event) => {
+            if (navigator.share) {
+                navigator.share({
+                    title: "google",
+                    url: "http://www.google.com"
+                }).then(() => {
+                    console.log("thanks for using api")
+                }).catch(() => {
+                    alert("error: in web share API");
+                })
+            } else {
+                alert("your broswer doe not support web share api.");
+            }
+        })
+    </script>
 </asp:Content>
