@@ -13,13 +13,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="res/css/prefixed.style.css" rel="stylesheet" />
+    <link href="res/css/style.css" rel="stylesheet" />
     <link href="main.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body style="background: #efefef;" onload="loading()">
+<body onload="loading()">
     <form id="form1" runat="server">
+        <%--bg--%>
+        <div class="parollax-images"></div>
         <%--preloader--%>
         <div class="preloader" id="preloader"><div class="colorful"></div></div>
         <div id="body-bg"></div>
@@ -51,9 +53,12 @@
         <%--navbar--%>
         <nav class="navbar navbar-expand-xxl " id="navs">
             <div class="container-fluid">
-                <asp:Hyperlink runat="server" CssClass="navbar-brand nav-img text-dark" NavigateUrl="~/Home.aspx">
+                <asp:Hyperlink runat="server" CssClass="navbar-brand nav-img text-dark hero-brand" NavigateUrl="~/Home.aspx">
                     <img src="res/media/img/20190708_002647.png" />
-                    <label id="navtext">Sunrise Infotech Solution</label></asp:Hyperlink>
+                </asp:Hyperlink>
+                <div class="hero-brand">
+                    <h1 class="  " data-aos="zoom-in-up" data-aos-duration="1500">SUNRISE INFOTECH SOLUTION</h1>
+                </div>
                 <%--menu button--%>
                 <label class="icon" id="icon">
                     <i class="fa-solid fa-bars"></i> Menu
@@ -65,22 +70,22 @@
                             <asp:HyperLink NavigateUrl="~/Home.aspx" runat="server" CssClass="nav-link"><i class="fa-solid fa-house"></i> Home</asp:HyperLink>
                         </li>
                         <li class="nav-item">
-                            <a href="/Home.aspx#about" class="nav-link"><i class="fa-solid fa-circle-info"></i>About us</a>
+                            <a href="/Home.aspx#about" class="nav-link"><i class="fa-solid fa-circle-info"></i> About us</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/Home.aspx#service" class="nav-link"><i class="fa-solid fa-gears"></i>Services</a>
+                            <a href="/Home.aspx#service" class="nav-link"><i class="fa-solid fa-gears"></i> Services</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/Home.aspx#course" class="nav-link"><i class="fa-solid fa-award"></i>Course</a>
+                            <a href="/Home.aspx#course" class="nav-link"><i class="fa-solid fa-award"></i> Course</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/Home.aspx#gallery" class="nav-link"><i class="fa-solid fa-photo-film"></i>Gallery</a>
+                            <a href="/Home.aspx#gallery" class="nav-link"><i class="fa-solid fa-photo-film"></i> Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/Home.aspx#team" class="nav-link"><i class="fa-solid fa-people-group"></i>Team</a>
+                            <a href="/Home.aspx#team" class="nav-link"><i class="fa-solid fa-people-group"></i> Team</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/Home.aspx#contact" class="nav-link"><i class="fa-solid fa-at"></i>Contact us</a>
+                            <a href="/Home.aspx#contact" class="nav-link"><i class="fa-solid fa-at"></i> Contact us</a>
                         </li>
                         <li class="nav-item">
                             <asp:Hyperlink runat="server" NavigateUrl="~/Help.aspx" CssClass="nav-link"><i class="fa-solid fa-handshake"></i> Help</asp:Hyperlink>
@@ -107,6 +112,6 @@
     <script>
         AOS.init();
     </script>
-    <script src="res/js/js_file.min.js"></script>
+    <script src="res/js/js_file.js"></script>
 </body>
 </html>

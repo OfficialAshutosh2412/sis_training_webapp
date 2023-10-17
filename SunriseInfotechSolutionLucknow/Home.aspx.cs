@@ -43,10 +43,22 @@ namespace SunriseInfotechSolutionLucknow
         {
             Response.Redirect("~/res/media/img/6.jpg");
         }
-
-        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        protected void ImageButton8_Click(object sender, ImageClickEventArgs e)
         {
             Response.Redirect("~/res/media/img/7.jpg");
+        }
+        protected void ImageButton9_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("~/res/media/img/WhatsApp Image 2023-10-17 at 16.21.58_d1c4046d.jpg");
+        }
+        protected void ImageButton10_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("~/res/media/img/WhatsApp Image 2023-10-17 at 16.23.27_fd5ff85e.jpg");
+        }
+        
+        protected void Unnamed1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Signup.aspx");
         }
     }
 }

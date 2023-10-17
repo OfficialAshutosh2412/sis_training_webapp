@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1 style="margin-top:100px"><i class="fa-solid fa-handshake"></i> Frequently Asked questions will help you..</h1>
+    <h1 style="margin-top:100px;color:white"><i class="fa-solid fa-handshake"></i> Frequently Asked questions will help you..</h1>
     <section class="help" style="color:#d8d8d8 !important">
         <asp:GridView ID="GridView1" CssClass="w-100 m-0 p-0 bg-dark" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" AllowPaging="True">
             <Columns>

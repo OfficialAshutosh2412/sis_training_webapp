@@ -6,10 +6,13 @@
     <%--hero section--%>
     <section class="hero" id="hero">
         <div class="hero-brand" data-aos="zoom-in-up" data-aos-duration="500" id="hero-brand">
-            <h1 class="  " data-aos="zoom-in-up" data-aos-duration="1500">SUNRISE INFOTECH SOLUTION</h1>
-            <h2 class="text-animation" data-aos="zoom-in-up" data-aos-duration="2000">
-                <asp:Label Text="WHERE" runat="server" />
-                <asp:Label Text="Quality Matters" runat="server" /></h2>
+            <div class="hero-box">
+                <img src="res/media/img/20190708_002647.png" />
+                <p>"Industry-Grade Programming Training for Tomorrow's Innovators. Unleash Your Full Potential!"</p>
+                <h2><span>Looking</span> for <br /> Summer Training</h2>
+                <asp:Button Text="Signup now    >>" runat="server" cssclass="hero-btn" OnClientClick="Goto" OnClick="Unnamed1_Click" />
+                
+            </div>
         </div>
     </section>
     <%--about us--%>
@@ -449,7 +452,9 @@
             <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="~/res/media/img/4.jpg" CssClass="gallery-img" OnClick="ImageButton5_Click" data-aos="fade-up" data-aos-duration="200" />
             <asp:ImageButton ID="ImageButton6" runat="server" ImageUrl="~/res/media/img/5.jpg" CssClass="gallery-img" OnClick="ImageButton6_Click" data-aos="fade-up" data-aos-duration="400" />
             <asp:ImageButton ID="ImageButton7" runat="server" ImageUrl="~/res/media/img/6.jpg" CssClass="gallery-img" OnClick="ImageButton7_Click" data-aos="fade-up" data-aos-duration="500" />
-            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/res/media/img/7.jpg" CssClass="gallery-img" OnClick="ImageButton1_Click" data-aos="fade-up" data-aos-duration="100" />
+            <asp:ImageButton ID="ImageButton8" runat="server" ImageUrl="~/res/media/img/7.jpg" CssClass="gallery-img" OnClick="ImageButton8_Click" data-aos="fade-up" data-aos-duration="100" />
+            <asp:ImageButton ID="ImageButton9" runat="server" ImageUrl="~/res/media/img/WhatsApp Image 2023-10-17 at 16.21.58_d1c4046d.jpg" CssClass="gallery-img" OnClick="ImageButton9_Click" data-aos="fade-up" data-aos-duration="100" />
+            <asp:ImageButton ID="ImageButton10" runat="server" ImageUrl="~/res/media/img/WhatsApp Image 2023-10-17 at 16.23.27_fd5ff85e.jpg" CssClass="gallery-img" OnClick="ImageButton10_Click" data-aos="fade-up" data-aos-duration="100" />
         </div>
     </section>
     <%--member--%>

@@ -11,19 +11,19 @@
                 <p>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="name required " ForeColor="#FF3300" ControlToValidate="name">**</asp:RequiredFieldValidator><i class="fa-solid fa-user"></i>
                     <asp:Label Text="Your name" runat="server" /></p>
-                <asp:TextBox ID="name" runat="server"></asp:TextBox>
+                <asp:TextBox ID="name" runat="server" placeholder="Example"></asp:TextBox>
             </div>
             <div class="form-item">
                 <p>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="create password" ForeColor="#FF3300" ControlToValidate="password">**</asp:RequiredFieldValidator><i class="fa-solid fa-key"></i>
                     <asp:Label Text="Create password" runat="server" /></p>
-                <asp:TextBox ID="password" runat="server"></asp:TextBox>
+                <asp:TextBox ID="password" runat="server" placeholder="use digit, one Capital letter, small letter"></asp:TextBox>
             </div>
             <div class="form-item">
                 <p>
                     <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="password unmatched !" ControlToCompare="password" ControlToValidate="confirmPpassword" ForeColor="#FF3300">**</asp:CompareValidator><i class="fa-solid fa-key"></i>
                     <asp:Label Text="Confirm password" runat="server" /></p>
-                <asp:TextBox ID="confirmPpassword" runat="server"></asp:TextBox>
+                <asp:TextBox ID="confirmPpassword" runat="server" placeholder="write same password again !"></asp:TextBox>
             </div>
         </div>
         <%--row 2--%>
@@ -36,19 +36,19 @@
             <div class="form-item">
                 <p>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Email required" ForeColor="#FF3300" ControlToValidate="email">**</asp:RequiredFieldValidator><i class="fa-solid fa-envelope"></i> <asp:Label Text="Email" runat="server" /></p>
-                <asp:TextBox ID="email" runat="server" TextMode="Email"></asp:TextBox>
+                <asp:TextBox ID="email" runat="server" TextMode="Email" placeholder="Example@gmail (gmail only)"></asp:TextBox>
             </div>
         </div>
         <div class="forms">
             <div class="form-item">
                 <p>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Phone number required" ForeColor="#FF3300" ControlToValidate="phone">**</asp:RequiredFieldValidator><i class="fa-solid fa-phone"></i> <asp:Label Text="Phone" runat="server" /></p>
-                <asp:TextBox ID="phone" runat="server"></asp:TextBox>
+                <asp:TextBox ID="phone" runat="server" placeholder="1234567890"></asp:TextBox>
             </div>
             <div class="form-item" runat="server" ID="collegeDiv">
                 <p>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="college name required" ForeColor="#FF3300" ControlToValidate="college">**</asp:RequiredFieldValidator><i class="fa-solid fa-building-columns"></i> <asp:Label Text="College name" runat="server" /></p>
-                <asp:TextBox ID="college" runat="server"></asp:TextBox>
+                <asp:TextBox ID="college" runat="server" placeholder="Example Institute Name"></asp:TextBox>
             </div>
         </div>
         <%--row 3--%>
@@ -56,17 +56,17 @@
             <div class="form-item" runat="server" ID="courseDiv">
                 <p>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="course name required" ForeColor="#FF3300" ControlToValidate="course">**</asp:RequiredFieldValidator><i class="fa-solid fa-graduation-cap"></i> <asp:Label Text="Course" runat="server" /></p>
-                <asp:TextBox ID="course" runat="server"></asp:TextBox>
+                <asp:TextBox ID="course" runat="server" placeholder="B.tech, BSC, BCA, MCA, MBA, BBA, other"></asp:TextBox>
             </div>
             <div class="form-item" runat="server" ID="semesterDiv">
                 <p>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ErrorMessage="semester required " ForeColor="#FF3300" ControlToValidate="semester">**</asp:RequiredFieldValidator><i class="fa-solid fa-graduation-cap"></i> <asp:Label Text="Semester" runat="server" /></p>
-                <asp:TextBox ID="semester" runat="server"></asp:TextBox>
+                <asp:TextBox ID="semester" runat="server" placeholder="1th, 2th, 3th, 4th, 5th, 6th,..."></asp:TextBox>
             </div>
             <div class="form-item">
                 <p>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="address required" ForeColor="#FF3300" ControlToValidate="address">**</asp:RequiredFieldValidator><i class="fa-solid fa-address-book"></i> <asp:Label Text="Address" runat="server" /></p>
-                <asp:TextBox ID="address" runat="server"></asp:TextBox>
+                <asp:TextBox ID="address" runat="server" placeholder="Example Lane Buliding no. examle..."></asp:TextBox>
             </div>
         </div>
         <%--row 4--%>
@@ -74,7 +74,7 @@
             <div class="form-item" runat="server" ID="techDiv">
                 <p>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ErrorMessage="technology required" ForeColor="#FF3300" ControlToValidate="tech">**</asp:RequiredFieldValidator><i class="fa-solid fa-code"></i> <asp:Label Text="Technology Opt." runat="server" /></p>
-                <asp:TextBox ID="tech" runat="server"></asp:TextBox>
+                <asp:TextBox ID="tech" runat="server" placeholder="ASP, C, C++, C#, Go, Ruby etc..."></asp:TextBox>
             </div>
             <div class="form-item">
                 <p><i class="fa-solid fa-venus-mars"></i> <asp:Label Text="Gender" runat="server" /></p>
@@ -92,7 +92,7 @@
                 <p>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="Profile picture required" ForeColor="#FF3300" ControlToValidate="FileUpload1">**</asp:RequiredFieldValidator><i class="fa-solid fa-image"></i>
                     <asp:Label Text="Profile Picture" runat="server" /></p>
-                <asp:FileUpload ID="FileUpload1" runat="server" />
+                <asp:FileUpload ID="FileUpload1" runat="server" CssClass="text-light" />
             </div>
             <div class="form-item">
                 <p><i class="fa-solid fa-image"></i>
@@ -102,7 +102,7 @@
              <div class="form-item">
                 <p>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ErrorMessage="enter date of joining" ForeColor="#FF3300" ControlToValidate="joindate">**</asp:RequiredFieldValidator><i class="fa-solid fa-calendar-days"></i> <asp:Label Text="Date of joining" runat="server" /></p>
-                <asp:TextBox ID="joindate" runat="server" TextMode="DateTimeLocal"></asp:TextBox>
+                <asp:TextBox ID="joindate" runat="server" TextMode="DateTimeLocal" CssClass="text-light"></asp:TextBox>
             </div>
         </div>
         <%--button--%>

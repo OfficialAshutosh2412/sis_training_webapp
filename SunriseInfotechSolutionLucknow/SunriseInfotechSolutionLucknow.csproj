@@ -113,6 +113,10 @@
     <Content Include="res\media\img\android.png" />
     <Content Include="res\media\img\asp.jpg" />
     <Content Include="res\media\img\asp.png" />
+    <Content Include="res\media\img\banner %281%29.png" />
+    <Content Include="res\media\img\banner %282%29.png" />
+    <Content Include="res\media\img\banner %283%29.png" />
+    <Content Include="res\media\img\banner %284%29.png" />
     <Content Include="res\media\img\bigdata.png" />
     <Content Include="res\media\img\c++.png" />
     <Content Include="res\media\img\cad.png" />
@@ -123,7 +127,6 @@
     <Content Include="res\media\img\hero-img.png" />
     <Content Include="res\media\img\java.png" />
     <Content Include="res\media\img\jsp.png" />
-    <Content Include="res\media\img\leaf.png" />
     <Content Include="res\media\img\matlab.jpg" />
     <Content Include="res\media\img\mentor 1.jpg" />
     <Content Include="res\media\img\PngItem_1128687.png" />
@@ -133,7 +136,14 @@
     <Content Include="res\media\img\Programming.gif" />
     <Content Include="res\media\img\python.png" />
     <Content Include="res\media\img\vlsi.png" />
+    <Content Include="res\media\img\wall %281%29.jpg" />
+    <Content Include="res\media\img\wall %282%29.jpg" />
+    <Content Include="res\media\img\wall %283%29.jpg" />
+    <Content Include="res\media\img\wall %284%29.jpg" />
+    <Content Include="res\media\img\wall %285%29.jpg" />
     <Content Include="res\media\img\WhatsApp Image 2023-09-27 at 00.28.21.jpg" />
+    <Content Include="res\media\img\WhatsApp Image 2023-10-17 at 16.21.58_d1c4046d.jpg" />
+    <Content Include="res\media\img\WhatsApp Image 2023-10-17 at 16.23.27_fd5ff85e.jpg" />
     <Content Include="res\media\img\wordpress.png" />
     <Content Include="res\media\video\Untitled.mp4" />
     <Content Include="res\media\video\[FREE - HDconvert.com] abstract_-_66480 %28540p%29.mp4" />
