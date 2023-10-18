@@ -8,7 +8,7 @@
         <div class="hero-brand" data-aos="zoom-in-up" data-aos-duration="500" id="hero-brand">
             <div class="hero-box">
                 <img src="res/media/img/20190708_002647.png" />
-                <p>"Industry-Grade Programming Training for Tomorrow's Innovators. Unleash Your Full Potential!"</p>
+                <p>"Unleash Your Full Potential!"</p>
                 <h2><span>Looking</span> for <br /> Summer Training</h2>
                 <asp:Button Text="Signup now    >>" runat="server" cssclass="hero-btn" OnClientClick="Goto" OnClick="Unnamed1_Click" />
                 

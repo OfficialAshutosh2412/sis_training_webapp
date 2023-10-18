@@ -13,7 +13,8 @@
     width: 100%;
     height: 100vh;
     z-index: -1;
-    background-size:100% 100%;
+    background-size:cover;
+    object-fit:cover;
     background-repeat:no-repeat;
     animation:animate_bg 30s linear infinite;
 }
@@ -232,7 +233,7 @@ input::placeholder{
 }
 
     .hero-box img {
-        width: 250px;
+        width: 150px;
     }
 
     .hero-box p {
@@ -266,11 +267,12 @@ input::placeholder{
 
         .hero-box h2 {
             color: white;
+            font-size:2rem
         }
 
 .hero-box span:nth-child(1) {
     color: var(--hover-bg);
-    font-size: 5rem;
+    font-size: 3rem;
 }
 .hero-brand {
     padding-top: 5px;
@@ -478,7 +480,7 @@ input::placeholder{
     }
 .item-title {
     width: 100%;
-    height: 250px;
+    height: 100%;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -490,7 +492,7 @@ input::placeholder{
 }
 .item-data {
     width: 100%;
-    height: 250px;
+    height: 100%;
     background: var(--hover-bg);
     color: white !important;
     transition: 0.4s all ease-in-out;
@@ -1254,6 +1256,9 @@ textarea {
         .bookmarks:hover {
             left: 0;
         }
+        .one{
+            display:none;
+        }
 /*media queries------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:1024px) {
     /*course*/
@@ -1280,7 +1285,7 @@ textarea {
     }
     /*about*/
     .about {
-        height: 80vh;
+        height: 100%;
     }
     .about-sections{
         margin-top:60px;
@@ -1346,9 +1351,7 @@ textarea {
 }
 /*320px — 480px: vertical tab devices*/
 @media screen and (max-width:671px) {
-    .hero-brand h1{
-        font-size:0.7rem;
-    }
+    
     /*about*/
     .about {
         height: auto;
@@ -1409,6 +1412,7 @@ textarea {
 }
 
 @media screen and (max-width:490px) {
+    
     /*team*/
     .member .mentor {
         margin: 0px;
@@ -1480,4 +1484,50 @@ textarea {
         padding:1%;
         text-align:center;
     }
+}
+@media screen and (max-width:400px){
+    .hero-brand h1{
+        display:none
+    }
+    .signin {
+        width: 100%;
+        height:90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        backdrop-filter: blur(8px) saturate(200%);
+        -webkit-backdrop-filter: blur(8px) saturate(200%);
+        background-color: rgba(17, 25, 40, 0.84);
+    }
+        .signin .forms-box {
+            width:100%;
+            height: 100%;
+            padding: 4%;
+            margin-top: 100px;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+            background-color: none;
+        }
+        .signin .forms-box .forms{
+            margin-top:10px;
+        }
+        .signup{
+            width:100%;
+            margin-top:70px !important;
+            padding:2%;
+            border-radius:0px;
+        }
+    .signup .form-item{
+        margin-top:20px;
+    }
+    .about-sections{
+        padding:3%;
+        width:90%;
+    }
+    .userhome h1{
+        font-size:1rem;
+    }
+    
 }
