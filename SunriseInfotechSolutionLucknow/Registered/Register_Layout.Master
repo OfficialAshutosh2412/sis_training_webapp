@@ -42,25 +42,30 @@
         <%--navbar--%>
         <nav class="navbar navbar-expand-xxl" id="navs">
             <div class="container-fluid">
-                <asp:Hyperlink runat="server"  CssClass="navbar-brand nav-img" NavigateUrl="~/Registered/Userhome.aspx" style="cursor:pointer"><img src="../res/media/img/20190708_002647.png" /><label  style="cursor:pointer" class="brand-name">Sunrise Infotech Solution</label></asp:Hyperlink>
+                <asp:Hyperlink runat="server" CssClass="navbar-brand nav-img text-dark hero-brand" NavigateUrl="~/Home.aspx">
+                    <img src="../res/media/img/20190708_002647.png" />
+                </asp:Hyperlink>
+                <div class="hero-brand">
+                    <h1>SUNRISE INFOTECH SOLUTION</h1>
+                </div>
                 <%--menu button--%>
                 <label class="icon" id="icon">
-                    <i class="fa-solid fa-bars"></i> Menu
+                    <i class="fa-solid fa-bars"></i>&nbsp;&nbsp;Menu
                 </label>
                 <%--responsive navbar--%>
                 <div class="collapse navbar-collapse justify-content-end small_nav" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <asp:HyperLink NavigateUrl="~/Registered/Userhome.aspx" runat="server" CssClass="nav-link"><i class="fa-solid fa-house"></i> Home</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl="~/Registered/Userhome.aspx" runat="server" CssClass="nav-link"><i class="fa-solid fa-house"></i>&nbsp;&nbsp; Home</asp:HyperLink>
                         </li>
                         <li class="nav-item">
-                            <asp:HyperLink NavigateUrl="~/Registered/Profile.aspx" runat="server" CssClass="nav-link"><i class="fa-solid fa-id-badge"></i> Profile</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl="~/Registered/Profile.aspx" runat="server" CssClass="nav-link"><i class="fa-solid fa-id-badge"></i>&nbsp;&nbsp; Profile</asp:HyperLink>
                         </li>
                         <li class="nav-item">
-                            <asp:Hyperlink runat="server" NavigateUrl="~/Registered/Certificate.aspx" CssClass="nav-link"><i class="fa-solid fa-award"></i> Certificates</asp:Hyperlink>
+                            <asp:Hyperlink runat="server" NavigateUrl="~/Registered/Certificate.aspx" CssClass="nav-link"><i class="fa-solid fa-award"></i>&nbsp;&nbsp; Certificates</asp:Hyperlink>
                         </li>
                         <li class="nav-item">
-                            <asp:HyperLink NavigateUrl="~/Registered/Feedback.aspx" runat="server" CssClass="nav-link"><i class="fa-solid fa-hand-holding-heart"></i> Feedback</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl="~/Registered/Feedback.aspx" runat="server" CssClass="nav-link"><i class="fa-solid fa-hand-holding-heart"></i>&nbsp;&nbsp; Feedback</asp:HyperLink>
                         </li>
                         <li class="nav-item">
                             <asp:Button Text="Logout" runat="server" ValidationGroup="fix" CssClass="nav-link p-2 rounded text-light" style="background:var(--hover-bg);width:fit-content;color:white !important;" OnClick="Unnamed3_Click"/>

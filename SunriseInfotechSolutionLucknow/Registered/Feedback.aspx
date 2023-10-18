@@ -5,12 +5,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section class="signin">
         <section class="forms-box" style="width: 100%; padding: 1%; border-radius: 10px;">
-            <h1 class="text-light"><i class="fa-solid fa-hand-holding-heart"></i>Feedback</h1>
+            <h1 class="text-light"><i class="fa-solid fa-hand-holding-heart"></i>&nbsp;&nbsp;Feedback</h1>
             <div class="forms">
                 <div class="form-item">
                     <p>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="name required" ForeColor="#FF3300" ControlToValidate="name">*</asp:RequiredFieldValidator>
-                        <i class="fa-solid fa-pen-fancy"></i>
+                        <i class="fa-solid fa-pen-fancy"></i>&nbsp;&nbsp;
                         <asp:Label Text="Your name" runat="server" />
                     </p>
                     <asp:TextBox ID="name" runat="server" ReadOnly="true"></asp:TextBox>
@@ -20,7 +20,7 @@
                 <div class="form-item">
                     <p>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="email required" ForeColor="#FF3300" ControlToValidate="email">*</asp:RequiredFieldValidator>
-                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;
                         <asp:Label Text="Email" runat="server" />
                     </p>
                     <asp:TextBox ID="email" runat="server" TextMode="Email" ReadOnly="true"></asp:TextBox>
@@ -30,7 +30,7 @@
                 <div class="form-item">
                     <p>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="write something for us" ForeColor="#FF3300" ControlToValidate="words">*</asp:RequiredFieldValidator>
-                        <i class="fa-solid fa-feather"></i>
+                        <i class="fa-solid fa-feather"></i>&nbsp;&nbsp;
                         <asp:Label Text="Your words" runat="server" />
                     </p>
                     <asp:TextBox ID="words" runat="server" placeholder="write something for us..." TextMode="MultiLine" Rows="1"></asp:TextBox>

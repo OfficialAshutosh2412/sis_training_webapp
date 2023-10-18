@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section class="profile"  style="margin-top:100px">
         <div class="pro-foot pro-feet">
-            <h3><i class="fa-solid fa-user"></i> Profile</h3>
+            <h3><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Profile</h3>
             <p><asp:HyperLink NavigateUrl="~/Registered/EditProfile.aspx" runat="server" style="color:var(--hover-bg);font-size:1.5rem" ToolTip="edit profile" ><i class="fa-solid fa-user-pen"></i></asp:HyperLink></p>
         </div>
         <div class="profile-container">
@@ -22,59 +22,59 @@
             </div>
             <div class="pro-data">
                 <p>
-                    <i class="fa-solid fa-building-columns"></i>
+                    <i class="fa-solid fa-building-columns"></i>&nbsp;&nbsp;
                     <asp:Label Text=" College : " runat="server" />
                 </p>
                 <asp:Label ID="college" runat="server" />
             </div>
             <div class="pro-data">
                 <p>
-                    <i class="fa-solid fa-graduation-cap"></i>
+                    <i class="fa-solid fa-graduation-cap"></i>&nbsp;&nbsp;
                     <asp:Label Text=" Course : " runat="server" />
                 </p>
                 <asp:Label ID="course" runat="server" />
             </div>
             <div class="pro-data">
                 <p>
-                    <i class="fa-solid fa-list-ol"></i>
+                    <i class="fa-solid fa-list-ol"></i>&nbsp;&nbsp;
                     <asp:Label Text=" Semester : " runat="server" />
                 </p>
                 <asp:Label ID="sem" runat="server" />
             </div>
             <div class="pro-data">
                 <p>
-                    <i class="fa-solid fa-code"></i>
+                    <i class="fa-solid fa-code"></i>&nbsp;&nbsp;
                     <asp:Label Text=" Technology Opt : " runat="server" />
                 </p>
                 <asp:Label ID="tech" runat="server" />
             </div>
             <div class="pro-data">
                 <p>
-                    <i class="fa-solid fa-venus-mars"></i>
+                    <i class="fa-solid fa-venus-mars"></i>&nbsp;&nbsp;
                     <asp:Label Text=" Gender : " runat="server" />
                 </p>
                 <asp:Label ID="gender" runat="server" />
             </div>
             <div class="pro-data">
                 <p>
-                    <i class="fa-solid fa-location-dot"></i>
+                    <i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;
                     <asp:Label Text=" Address : " runat="server" />
                 </p>
                 <asp:Label ID="address" runat="server" />
             </div>
             <div class="pro-data">
                 <p>
-                    <i class="fa-solid fa-calendar-days"></i>
+                    <i class="fa-solid fa-calendar-days"></i>&nbsp;&nbsp;
                     <asp:Label Text=" Batch Joining Date : " runat="server" />
                 </p>
                 <asp:Label ID="joining" runat="server" />
             </div>
             <div class="pro-foot">
-                <p><i class="fa-solid fa-phone"></i> <asp:Label ID="phone" runat="server" /></p>
-                <p><i class="fa-solid fa-id-card-clip"></i>
+                <p><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;<asp:Label ID="phone" runat="server" /></p>
+                <p><i class="fa-solid fa-id-card-clip"></i>&nbsp;&nbsp;
                     <asp:Label Text="Your ID - " runat="server" />
                     <asp:Label ID="ids" runat="server" /></p>
-                <p><i class="fa-solid fa-envelope"></i> <asp:Label ID="email" runat="server" /></p>
+                <p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;<asp:Label ID="email" runat="server" /></p>
             </div>
         </div>
     </section>
