@@ -26,8 +26,8 @@
         <div class="preloader" id="preloader"><div class="colorful"></div></div>
         <div id="body-bg"></div>
         <%--theme button--%>
-        <div class="theme" title="themes">
-            <div onclick="ShowSwitcherPanel()"><i class="fa-solid fa-moon"></i></div>
+        <div class="theme" title="themes" onclick="ShowSwitcherPanel()">
+            <div><i class="fa-solid fa-moon"></i></div>
         </div>
         <%--whatsapp button--%>
         <div class="theme whatsapp" title="connect with us">
@@ -46,7 +46,8 @@
                 <li id="blue" onclick="changingToBlueTheme()"></li>
                 <li id="green" onclick="changingToGreenTheme()"></li>
                 <li id="voilet" onclick="changingToVoiletTheme()"></li>
-                <li id="gray" onclick="changingToGrayTheme()"></li>
+                <li id="cyan" onclick="changingToCyanTheme()"></li>
+                <li id="close-theme" onclick="CloseThemePanel()" class="text-light"><i class="fa-solid fa-circle-xmark"></i></li>
             </ul>
             <div class="content"></div>
         </div>
@@ -57,7 +58,7 @@
                     <img src="res/media/img/20190708_002647.png" />
                 </asp:Hyperlink>
                 <div class="hero-brand">
-                    <h1 class="  " data-aos="zoom-in-up" data-aos-duration="1500">SUNRISE INFOTECH SOLUTION</h1>
+                    <h1 data-aos="zoom-in-up" data-aos-duration="1500">SUNRISE INFOTECH SOLUTION</h1>
                 </div>
                 <%--menu button--%>
                 <label class="icon" id="icon">

@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="../res/css/prefixed.style.css" rel="stylesheet" />
+    <link href="../res/css/style.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -35,6 +35,7 @@
                 <li id="green" onclick="changingToGreenTheme()"></li>
                 <li id="voilet" style="background:#246de3;" onclick="changingToSkyTheme()"></li>
                 <li id="gray" style="background:#e0de53;" onclick="changingToYellowTheme()"></li>
+                <li id="close-theme" onclick="CloseThemePanel()" class="text-light"><i class="fa-solid fa-circle-xmark"></i></li>
             </ul>
             <div class="content"></div>
         </div>
@@ -78,6 +79,6 @@
         </footer>
     </form>
 
-    <script src="../res/js/js_file.min.js"></script>
+    <script src="../res/js/js_file.js"></script>
 </body>
 </html>

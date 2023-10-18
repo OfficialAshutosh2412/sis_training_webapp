@@ -13,12 +13,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="../res/css/prefixed.style.css" rel="stylesheet" />
+    <link href="../res/css/style.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body onload="loading()"style="background: #efefef;" >
+<body onload="loading()">
     <form id="form1" runat="server">
+        <%--bg--%>
+        <div class="parollax-images"></div>
         <%--preloader--%>
         <div class="preloader" id="preloader"><div class="colorful"></div></div>
         <%--theme button--%>
@@ -32,7 +34,8 @@
                 <li id="blue" onclick="changingToBlueTheme()"></li>
                 <li id="green" onclick="changingToGreenTheme()"></li>
                 <li id="voilet" onclick="changingToVoiletTheme()"></li>
-                <li id="gray" onclick="changingToGrayTheme()"></li>
+                <li id="cyan" onclick="changingToCyanTheme()"></li>
+                <li id="close-theme" onclick="CloseThemePanel()" class="text-light"><i class="fa-solid fa-circle-xmark"></i></li>
             </ul>
             <div class="content"></div>
         </div>
@@ -104,6 +107,6 @@
     </form>
 
 
-    <script src="../res/js/js_file.min.js"></script>
+    <script src="../res/js/js_file.js"></script>
 </body>
 </html>

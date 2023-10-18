@@ -3,16 +3,16 @@ var load = document.getElementById("preloader");
 function loading() {
     load.style.display = "none"
 };
-//theme-------------------------------------------------------------
+//theme----------------------------------------------------------------------------------
 //theme panel hidden
 function ShowSwitcherPanel() {
     document.querySelector('.themes').classList.toggle('theme-hide');
-    //auto hide theme panel
-    setTimeout(() => {
-        document.querySelector('.themes').classList.toggle('theme-hide');
-    }, 2500);
+   
 }
-//blue
+function CloseThemePanel() {
+    document.querySelector('.themes').classList.toggle('theme-hide');
+}
+//blue----------------------------------------------------------------------------------
 function changingToBlueTheme() {
     localStorage.clear();
     document.querySelector(":root").style.cssText = '--hover-bg:#2b40a6;';
@@ -23,7 +23,7 @@ function changingToBlueTheme() {
 if (localStorage.getItem('blue')) {
     changingToBlueTheme();
 }
-//red
+//red----------------------------------------------------------------------------------
 function changingToRedTheme() {
     localStorage.clear();
     //getting values
@@ -35,7 +35,7 @@ function changingToRedTheme() {
 if (localStorage.getItem('red')) {
     changingToRedTheme();
 }
-//green
+//green----------------------------------------------------------------------------------
 function changingToGreenTheme() {
     localStorage.clear();
     //getting values
@@ -47,7 +47,7 @@ function changingToGreenTheme() {
 if (localStorage.getItem('green')) {
     changingToGreenTheme();
 }
-//voilet
+//voilet----------------------------------------------------------------------------------
 function changingToVoiletTheme() {
     localStorage.clear();
     //getting values
@@ -59,19 +59,19 @@ function changingToVoiletTheme() {
 if (localStorage.getItem('voilet')) {
     changingToVoiletTheme()
 }
-//gray
-function changingToGrayTheme() {
+//white----------------------------------------------------------------------------------
+function changingToCyanTheme() {
     localStorage.clear();
     //getting values
-    document.querySelector(":root").style.cssText = '--hover-bg:#3b3b3b;';
+    document.querySelector(":root").style.cssText = '--hover-bg:#00b2bf;';
     //storing in local storage
-    localStorage.setItem('gray', this);
+    localStorage.setItem('Cyan', this);
 };
 //keep gray
-if (localStorage.getItem('gray')) {
-    changingToGrayTheme()
+if (localStorage.getItem('Cyan')) {
+    changingToCyanTheme()
 }
-//pink
+//pink----------------------------------------------------------------------------------
 function changingToPinkTheme() {
     localStorage.clear();
     //getting values
@@ -84,7 +84,7 @@ if (localStorage.getItem('Pink')) {
     changingToPinkTheme()
 }
 
-//sky
+//sky----------------------------------------------------------------------------------
 function changingToSkyTheme() {
     localStorage.clear();
     //getting values
@@ -96,7 +96,7 @@ function changingToSkyTheme() {
 if (localStorage.getItem('Sky')) {
     changingToSkyTheme()
 }
-//yellow
+//yellow----------------------------------------------------------------------------------
 function changingToYellowTheme() {
     localStorage.clear();
     //getting values
