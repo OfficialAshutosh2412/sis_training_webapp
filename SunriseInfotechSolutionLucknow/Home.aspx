@@ -446,15 +446,15 @@
     <section class="gallery" id="gallery">
         <h1 class="title mb-3"><span>Moments</span><span> of captures</span></h1>
         <div>
-            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/res/media/img/1.jpg" CssClass="gallery-img" OnClick="ImageButton2_Click" data-aos="fade-up" data-aos-duration="200" />
-            <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/res/media/img/2.jpg" CssClass="gallery-img" OnClick="ImageButton3_Click" data-aos="fade-up" data-aos-duration="400" />
-            <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="~/res/media/img/3.jpg" CssClass="gallery-img" OnClick="ImageButton4_Click" data-aos="fade-up" data-aos-duration="600" />
-            <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="~/res/media/img/4.jpg" CssClass="gallery-img" OnClick="ImageButton5_Click" data-aos="fade-up" data-aos-duration="200" />
-            <asp:ImageButton ID="ImageButton6" runat="server" ImageUrl="~/res/media/img/5.jpg" CssClass="gallery-img" OnClick="ImageButton6_Click" data-aos="fade-up" data-aos-duration="400" />
-            <asp:ImageButton ID="ImageButton7" runat="server" ImageUrl="~/res/media/img/6.jpg" CssClass="gallery-img" OnClick="ImageButton7_Click" data-aos="fade-up" data-aos-duration="500" />
-            <asp:ImageButton ID="ImageButton8" runat="server" ImageUrl="~/res/media/img/7.jpg" CssClass="gallery-img" OnClick="ImageButton8_Click" data-aos="fade-up" data-aos-duration="100" />
-            <asp:ImageButton ID="ImageButton9" runat="server" ImageUrl="~/res/media/img/WhatsApp Image 2023-10-17 at 16.21.58_d1c4046d.jpg" CssClass="gallery-img" OnClick="ImageButton9_Click" data-aos="fade-up" data-aos-duration="100" />
-            <asp:ImageButton ID="ImageButton10" runat="server" ImageUrl="~/res/media/img/WhatsApp Image 2023-10-17 at 16.23.27_fd5ff85e.jpg" CssClass="gallery-img" OnClick="ImageButton10_Click" data-aos="fade-up" data-aos-duration="100" />
+            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/res/media/img/1.webp" CssClass="gallery-img" OnClick="ImageButton2_Click" data-aos="fade-up" data-aos-duration="200" />
+            <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/res/media/img/2.webp" CssClass="gallery-img" OnClick="ImageButton3_Click" data-aos="fade-up" data-aos-duration="400" />
+            <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="~/res/media/img/3.webp" CssClass="gallery-img" OnClick="ImageButton4_Click" data-aos="fade-up" data-aos-duration="600" />
+            <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="~/res/media/img/4.webp" CssClass="gallery-img" OnClick="ImageButton5_Click" data-aos="fade-up" data-aos-duration="200" />
+            <asp:ImageButton ID="ImageButton6" runat="server" ImageUrl="~/res/media/img/5.webp" CssClass="gallery-img" OnClick="ImageButton6_Click" data-aos="fade-up" data-aos-duration="400" />
+            <asp:ImageButton ID="ImageButton7" runat="server" ImageUrl="~/res/media/img/6.webp" CssClass="gallery-img" OnClick="ImageButton7_Click" data-aos="fade-up" data-aos-duration="500" />
+            <asp:ImageButton ID="ImageButton8" runat="server" ImageUrl="~/res/media/img/7.webp" CssClass="gallery-img" OnClick="ImageButton8_Click" data-aos="fade-up" data-aos-duration="100" />
+            <asp:ImageButton ID="ImageButton9" runat="server" ImageUrl="~/res/media/img/WhatsApp Image 2023-10-17 at 16.21.58_d1c4046d.webp" CssClass="gallery-img" OnClick="ImageButton9_Click" data-aos="fade-up" data-aos-duration="100" />
+            <asp:ImageButton ID="ImageButton10" runat="server" ImageUrl="~/res/media/img/WhatsApp Image 2023-10-17 at 16.23.27_fd5ff85e.webp" CssClass="gallery-img" OnClick="ImageButton10_Click" data-aos="fade-up" data-aos-duration="100" />
         </div>
     </section>
     <%--member--%>
@@ -463,7 +463,7 @@
         <%--director--%>
         <div class="mentor" data-aos="fade-up" data-aos-duration="100">
             <div class="image">
-                <img src="../res/media/img/1%20(2).jpg" />
+                <img src="../res/media/img/1%20(2).webp" />
             </div>
             <div class="image-data">
                 <h1>The Director</h1>
@@ -480,7 +480,7 @@
         <%--trainer--%>
         <div class="mentor mentor-direction-right" id="mentor" data-aos="fade-up" data-aos-duration="200">
             <div class="image">
-                <img src="../res/media/img/mentor%201.jpg" />
+                <img src="../res/media/img/mentor%201.webp" />
             </div>
             <div class="image-data">
                 <h1>IT Trainer</h1>
@@ -497,7 +497,7 @@
         <%--founder--%>
         <div class="mentor" data-aos="fade-up" data-aos-duration="100">
             <div class="image">
-                <img src="../res/media/img/2%20(2).jpg" />
+                <img src="../res/media/img/2%20(2).webp" />
             </div>
             <div class="image-data">
                 <h1>Founder & Asst. Director</h1>
@@ -514,7 +514,7 @@
         <%--techincal--%>
         <div class="mentor mentor-direction-right" data-aos="fade-up" data-aos-duration="200">
             <div class="image">
-                <img src="../res/media/img/3%20(2).jpg" />
+                <img src="../res/media/img/3%20(2).webp" />
             </div>
             <div class="image-data">
                 <h1>Technical Director</h1>
@@ -531,7 +531,7 @@
         <%--manager--%>
         <div class="mentor" data-aos="fade-up" data-aos-duration="100">
             <div class="image">
-                <img src="../res/media/img/4%20(1).jpg" />
+                <img src="../res/media/img/4%20(1).webp" />
             </div>
             <div class="image-data">
                 <h1>Managing Director</h1>
@@ -548,7 +548,7 @@
         <%--Admin--%>
         <div class="mentor mentor-direction-right" id="developer" data-aos="fade-up" data-aos-duration="200">
             <div class="image">
-                <img src="../res/media/img/developer.jpg" />
+                <img src="../res/media/img/developer.webp" />
             </div>
             <div class="image-data">
                 <h1>The Administrator</h1>
@@ -567,13 +567,13 @@
     <%--languages--%>
     <h1 class="title mb-5 mt-5" id="languages"><span>Languages</span><span> We are Working On</span></h1>
     <section class="langs">
-        <img src="res/media/img/asp.jpg" />
+        <img src="res/media/img/asp.webp" />
         <img src="res/media/img/bigdata.png" />
-        <img src="res/media/img/cakephp.jpg" />
+        <img src="res/media/img/cakephp.webp" />
         <img src="res/media/img/ethical.jpg" />
         <img src="res/media/img/java.png" />
         <img src="res/media/img/jsp.png" />
-        <img src="res/media/img/matlab.jpg" />
+        <img src="res/media/img/matlab.webp" />
         <img src="res/media/img/python.png" />
         <img src="res/media/img/wordpress.png" />
     </section>

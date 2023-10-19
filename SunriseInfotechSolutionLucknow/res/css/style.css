@@ -20,22 +20,22 @@
 }
 @keyframes animate_bg{
     0% {
-        background-image: url('../media/img/wall (1).jpg')
+        background-image: url('../media/img/wall (1).webp');
     }
     23% {
-        background-image: url('../media/img/wall (2).jpg')
+        background-image: url('../media/img/wall (2).webp')
     }
     55% {
-        background-image: url('../media/img/wall (3).jpg')
+        background-image: url('../media/img/wall (3).webp')
     }
     66% {
-        background-image: url('../media/img/wall (4).jpg')
+        background-image: url('../media/img/wall (4).webp')
     }
     89% {
-        background-image: url('../media/img/wall (5).jpg')
+        background-image: url('../media/img/wall (5).webp')
     }
     100% {
-        background-image: url('../media/img/wall (1).jpg')
+        background-image: url('../media/img/wall (1).webp')
     }
 }
     
@@ -146,11 +146,9 @@ input::placeholder{
         color: white;
         font-weight: bolder;
         padding: 10px;
-        transition: 0.2s all ease-in-out;
     }
 
     .nav-link:hover, .navbar-brand:hover {
-        transition: 0.2s all ease-in-out;
         border-radius: 5px;
     }
     .nav-img img{
@@ -168,7 +166,6 @@ input::placeholder{
     width: 200px;
     padding: 1%;
     display: none;
-    transition: 0.2s all ease-in-out;
     color:white;
 }
     .small_nav .nav-link:hover{

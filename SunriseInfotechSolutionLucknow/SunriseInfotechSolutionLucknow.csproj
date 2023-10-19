@@ -125,6 +125,19 @@
     <Content Include="res\media\img\director.jpg" />
     <Content Include="res\media\img\ethical.jpg" />
     <Content Include="res\media\img\hero-img.png" />
+    <Content Include="res\media\img\icomImage\android.png" />
+    <Content Include="res\media\img\icomImage\asp.png" />
+    <Content Include="res\media\img\icomImage\cad.png" />
+    <Content Include="res\media\img\icomImage\cs.png" />
+    <Content Include="res\media\img\icomImage\java.png" />
+    <Content Include="res\media\img\icomImage\mat.png" />
+    <Content Include="res\media\img\icomImage\mgmnt.png" />
+    <Content Include="res\media\img\icomImage\mix.png" />
+    <Content Include="res\media\img\icomImage\php.png" />
+    <Content Include="res\media\img\icomImage\plc.png" />
+    <Content Include="res\media\img\icomImage\py.png" />
+    <Content Include="res\media\img\icomImage\staad.png" />
+    <Content Include="res\media\img\icomImage\vlsi.png" />
     <Content Include="res\media\img\java.png" />
     <Content Include="res\media\img\jsp.png" />
     <Content Include="res\media\img\matlab.jpg" />
@@ -145,8 +158,6 @@
     <Content Include="res\media\img\WhatsApp Image 2023-10-17 at 16.21.58_d1c4046d.jpg" />
     <Content Include="res\media\img\WhatsApp Image 2023-10-17 at 16.23.27_fd5ff85e.jpg" />
     <Content Include="res\media\img\wordpress.png" />
-    <Content Include="res\media\video\Untitled.mp4" />
-    <Content Include="res\media\video\[FREE - HDconvert.com] abstract_-_66480 %28540p%29.mp4" />
     <Content Include="Signup.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -309,6 +320,30 @@
     <Content Include="res\media\files\C FAQ.pdf" />
     <Content Include="res\media\files\ASCII Chart and Other Resources.pdf" />
     <Content Include="Registered\Register_Layout.Master" />
+    <Content Include="res\media\img\1 %282%29.webp" />
+    <Content Include="res\media\img\1.webp" />
+    <Content Include="res\media\img\2 %282%29.webp" />
+    <Content Include="res\media\img\2.webp" />
+    <Content Include="res\media\img\3 %282%29.webp" />
+    <Content Include="res\media\img\3.webp" />
+    <Content Include="res\media\img\4 %281%29.webp" />
+    <Content Include="res\media\img\4.webp" />
+    <Content Include="res\media\img\5.webp" />
+    <Content Include="res\media\img\6.webp" />
+    <Content Include="res\media\img\7.webp" />
+    <Content Include="res\media\img\asp.webp" />
+    <Content Include="res\media\img\cakephp.webp" />
+    <Content Include="res\media\img\developer.webp" />
+    <Content Include="res\media\img\director.webp" />
+    <Content Include="res\media\img\matlab.webp" />
+    <Content Include="res\media\img\mentor 1.webp" />
+    <Content Include="res\media\img\wall %281%29.webp" />
+    <Content Include="res\media\img\wall %282%29.webp" />
+    <Content Include="res\media\img\wall %283%29.webp" />
+    <Content Include="res\media\img\wall %284%29.webp" />
+    <Content Include="res\media\img\wall %285%29.webp" />
+    <Content Include="res\media\img\WhatsApp Image 2023-10-17 at 16.21.58_d1c4046d.webp" />
+    <Content Include="res\media\img\WhatsApp Image 2023-10-17 at 16.23.27_fd5ff85e.webp" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
