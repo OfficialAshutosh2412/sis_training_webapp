@@ -1,19 +1,19 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Landing.master.cs" Inherits="SunriseInfotechSolutionLucknow.Landing" %>
 <!DOCTYPE html>
 <html>
-<head runat="server">
-    <meta name="viewport" content="width=device-width">
+<head runat="server" lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SIS an institue which provides industrial training and internship to students.">
     <title></title>
     <link rel="icon" href="res/media/favicon/WhatsApp-Image-2023-09-27-at-00.28.21.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <%--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />--%>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="res/css/style.css" rel="stylesheet" />
+    <link href="res/css/style.min.css" rel="stylesheet" />
     <link href="main.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -55,10 +55,10 @@
         <nav class="navbar navbar-expand-xxl " id="navs">
             <div class="container-fluid">
                 <asp:Hyperlink runat="server" CssClass="navbar-brand nav-img text-dark hero-brand" NavigateUrl="~/Home.aspx">
-                    <img src="res/media/img/20190708_002647.png" />
+                    <img src="res/media/img/20190708_002647.png" alt="our logo" />
                 </asp:Hyperlink>
                 <div class="hero-brand">
-                    <h1 data-aos="zoom-in-up" data-aos-duration="1500">SUNRISE INFOTECH SOLUTION</h1>
+                    <label data-aos="zoom-in-up" data-aos-duration="1500">SUNRISE INFOTECH SOLUTION</label>
                 </div>
                 <%--menu button--%>
                 <label class="icon" id="icon">
@@ -132,10 +132,10 @@
         </footer>
     </form>
     <%--script--%>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <%--<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>
-    <script src="res/js/js_file.js"></script>
+    </script>--%>
+    <script src="res/js/js.min.js"></script>
 </body>
 </html>

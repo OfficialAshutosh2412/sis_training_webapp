@@ -108,4 +108,18 @@ function changingToYellowTheme() {
 if (localStorage.getItem('yellow')) {
     changingToYellowTheme()
 }
+//load more code--------------------------------------------------------------------------
+let loadBtn = document.querySelector("#load-btn");
+let loadmdiv = document.querySelector("#loadmorediv");
+let currentItem = 4;
 
+loadBtn.onclick = () => {
+    let boxes = [...document.querySelectorAll('.course-item')];
+    for (var i = currentItem; i < currentItem + 4; i++) {
+        boxes[i].style.display = "inline-block";
+    }
+    currentItem += 4;
+    if (currentItem >= boxes.length) {
+        loadBtn.style.display = "none";
+    }
+}
