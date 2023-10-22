@@ -51,50 +51,69 @@
             </ul>
             <div class="content"></div>
         </div>
-        <%--navbar--%>
-        <nav class="navbar navbar-expand-xxl " id="navs">
+        <nav class="navbar navbar-expand-lg admin-nav-shadow-2">
             <div class="container-fluid">
-                <asp:Hyperlink runat="server" CssClass="navbar-brand nav-img text-dark hero-brand" NavigateUrl="~/Home.aspx">
-                    <img src="res/media/img/20190708_002647.png" alt="our logo" />
-                </asp:Hyperlink>
-                <div class="hero-brand">
-                    <label data-aos="zoom-in-up" data-aos-duration="1500">SUNRISE INFOTECH SOLUTION</label>
-                </div>
-                <%--menu button--%>
-                <label class="icon" id="icon">
-                    <i class="fa-solid fa-bars"></i>&nbsp;&nbsp;Menu
+                <asp:Hyperlink runat="server"  CssClass="navbar-brand hero-brand nav-img" NavigateUrl="~/Home.aspx" style="cursor:pointer"><img src="../res/media/img/20190708_002647.png" /><label data-aos="zoom-in-up" data-aos-duration="1500">SUNRISE INFOTECH SOLUTION</label></asp:Hyperlink>
+                <button class="navbar-toggler" style="background:var(--hover-bg) !important;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menu">
+                    <label class="icon" id="icon">
+                    <i class="fa-solid fa-bars"></i> Menu
                 </label>
-                <%--responsive navbar--%>
-                <div class="justify-content-end small_nav">
+                </button>
+                <div class="collapse navbar-collapse justify-content-end nav-hover-link" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <asp:HyperLink NavigateUrl="~/Home.aspx" runat="server" CssClass="nav-link"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl="~/Home.aspx" runat="server" ToolTip="Home" CssClass="nav-link">Home</asp:HyperLink>
                         </li>
                         <li class="nav-item">
-                            <a href="/Home.aspx#about" class="nav-link"><i class="fa-solid fa-circle-info"></i>&nbsp;&nbsp;About us</a>
+                            <a href="/Home.aspx#about" class="nav-link" ToolTip="About us">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/Home.aspx#service" class="nav-link"><i class="fa-solid fa-gears"></i>&nbsp;&nbsp;Services</a>
+                            <a href="/Home.aspx#service" class="nav-link" ToolTip="Services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/Home.aspx#course" class="nav-link"><i class="fa-solid fa-award"></i>&nbsp;&nbsp;Course</a>
+                            <a href="/Home.aspx#course" class="nav-link" ToolTip="Courses">Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/Home.aspx#gallery" class="nav-link"><i class="fa-solid fa-photo-film"></i>&nbsp;&nbsp;Gallery</a>
+                            <a href="/Home.aspx#gallery" class="nav-link" ToolTip="Gallery">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/Home.aspx#team" class="nav-link"><i class="fa-solid fa-people-group"></i>&nbsp;&nbsp;Team</a>
+                            <a href="/Home.aspx#team" class="nav-link" ToolTip="Our Team">Team</a>
                         </li>
                         <li class="nav-item">
-                            <asp:Hyperlink runat="server" NavigateUrl="~/Help.aspx" CssClass="nav-link"><i class="fa-solid fa-handshake"></i>&nbsp;&nbsp;Help</asp:Hyperlink>
+                            <asp:Hyperlink runat="server" NavigateUrl="~/Help.aspx" ToolTip="Help" CssClass="nav-link">Help</asp:Hyperlink>
                         </li>
                         <li class="nav-item">
-                            <asp:HyperLink NavigateUrl="~/Login.aspx" runat="server" CssClass="nav-link p-2 rounded" style="background:var(--hover-bg);width:fit-content;color:white !important"><i class="fa-solid fa-right-to-bracket text-light"></i>&nbsp;&nbsp;Login</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl="~/Login.aspx" runat="server" CssClass="nav-link p-2 rounded" style="background:var(--hover-bg);width:fit-content;color:white !important" ToolTip="Login">Login</asp:HyperLink>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <div class="fixed-navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <asp:HyperLink NavigateUrl="~/Home.aspx" runat="server" ToolTip="Home" CssClass="nav-link"><i class="fa-solid fa-house"></i></asp:HyperLink>
+                </li>
+                <li class="nav-item">
+                    <a href="/Home.aspx#about" class="nav-link" title="About us"><i class="fa-solid fa-circle-info"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Home.aspx#service" class="nav-link" title="Services"><i class="fa-solid fa-gears"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Home.aspx#course" class="nav-link" title="Courses"><i class="fa-solid fa-award"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Home.aspx#gallery" class="nav-link" title="Gallery"><i class="fa-solid fa-photo-film"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Home.aspx#team" class="nav-link" title="Our Team"><i class="fa-solid fa-people-group"></i></a>
+                </li>
+                <li class="nav-item">
+                    <asp:HyperLink runat="server" NavigateUrl="~/Help.aspx" ToolTip="Help" CssClass="nav-link"><i class="fa-solid fa-handshake"></i></asp:HyperLink>
+                </li>
+            </ul>
+        </div>
         <%--content placeholder--%>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

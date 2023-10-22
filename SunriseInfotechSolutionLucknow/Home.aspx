@@ -4,17 +4,47 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <%--hero section--%>
-    <section class="hero" id="hero">
-        <div class="hero-brand" data-aos="zoom-in-up" data-aos-duration="500" id="hero-brand">
-            <div class="hero-box">
-                <img src="res/media/img/20190708_002647.png" alt="our logo"/>
+    <div id="carouselExampleCaptions" class="carousel slide sliders hero" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner ">
+            <div class="carousel-item active hero-box " data-bs-interval="2000">
+                 <img src="res/media/img/20190708_002647.png" alt="our logo" />
                 <p>"Unleash Your Full Potential!"</p>
-                <h6><span>Looking</span> for <br /> Summer Training</h6>
+                <h6><span>Looking</span> for
+                    <br />
+                    Industrial Training</h6>
                 <asp:Button Text="Signup now    >>" runat="server" cssclass="hero-btn" OnClientClick="Goto" OnClick="Unnamed1_Click" />
-                
+            </div>
+            <div class="carousel-item hero-box" data-bs-interval="2000">
+                <img src="res/media/img/icomImage/mgmnt.png" alt="management logo" />
+                <p>"Make yourself a master"</p>
+                <h6><span>Looking</span> for
+                    <br />
+                    Management Training</h6>
+                <asp:Button Text="Signup now    >>" runat="server" cssclass="hero-btn" OnClientClick="Goto" OnClick="Unnamed1_Click" />
+            </div>
+            <div class="carousel-item hero-box" data-bs-interval="2000">
+                <img src="res/media/img/icomImage/staad.png" alt="staad image" />
+                <p>"Everything you do, it matters"</p>
+                <h6><span>Looking</span> for
+                    <br />
+                    Technical Courses</h6>
+                <asp:Button Text="Signup now    >>" runat="server" cssclass="hero-btn" OnClientClick="Goto" OnClick="Unnamed1_Click" />
             </div>
         </div>
-    </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     <%--about us--%>
     <h1 class="title" id="about"><span>About</span><span> Us</span></h1>
     <section class="about">
@@ -37,7 +67,7 @@
     <section class="service" id="service">
         <h1 class="title"><span>Services</span><span> We Provide</span></h1>
         <div class="services-container">
-            <div data-aos="zoom-in-up" data-aos-duration="100" >
+            <div data-aos="zoom-in-up" data-aos-duration="100">
                 <h1>software development</h1>
                 <asp:HyperLink NavigateUrl="~/Programs.aspx" runat="server" ToolTip="download brochure"><i class="fa-solid fa-chevron-right"></i></asp:HyperLink>
             </div>
@@ -108,8 +138,8 @@
             </div>
             <%--asp--%>
             <div class="course-item" data-aos="fade-up" data-aos-duration="300">
-                <div class="item-title"> 
-                     <img src="res/media/img/icomImage/asp.png" alt="asp.net image" />
+                <div class="item-title">
+                    <img src="res/media/img/icomImage/asp.png" alt="asp.net image" />
                     <h3>ASP.NET Technology</h3>
                     <h1>6000/- Rs</h1>
                 </div>
@@ -470,7 +500,7 @@
             <%--GIS--%>
             <div class="course-item" data-aos="fade-up" data-aos-duration="400">
                 <div class="item-title">
-                    <img src="res/media/img/icomImage/gis.png" alt="GIS image"/>
+                    <img src="res/media/img/icomImage/gis.png" alt="GIS image" />
                     <h3>GIS</h3>
                     <h1>6000/- Rs</h1>
                 </div>
@@ -497,7 +527,7 @@
             <%--angular js--%>
             <div class="course-item" data-aos="fade-up" data-aos-duration="400">
                 <div class="item-title">
-                    <img src="res/media/img/icomImage/angular.png" alt="GIS image"/>
+                    <img src="res/media/img/icomImage/angular.png" alt="GIS image" />
                     <h3>Angular JS</h3>
                     <h1>6000/- Rs</h1>
                 </div>
@@ -523,14 +553,14 @@
             </div>
         </div>
         <div class="loadmore" id="loadmorediv">
-            <Label id="load-btn"><i class="fa-solid fa-arrow-down fa-beat-fade"></i>&nbsp;&nbsp;Load more</Label>
+            <label id="load-btn"><i class="fa-solid fa-arrow-down fa-beat-fade"></i>&nbsp;&nbsp;Load more</label>
         </div>
     </section>
     <%--gallery--%>
     <section class="gallery" id="gallery">
         <h1 class="title mb-3"><span>Moments</span><span> of captures</span></h1>
         <div>
-            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/res/media/img/1.webp" CssClass="gallery-img" OnClick="ImageButton2_Click" data-aos="fade-up" data-aos-duration="200"  alt="gallery image" />
+            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/res/media/img/1.webp" CssClass="gallery-img" OnClick="ImageButton2_Click" data-aos="fade-up" data-aos-duration="200" alt="gallery image" />
             <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/res/media/img/2.webp" CssClass="gallery-img" OnClick="ImageButton3_Click" data-aos="fade-up" data-aos-duration="400" alt="gallery image" />
             <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="~/res/media/img/3.webp" CssClass="gallery-img" OnClick="ImageButton4_Click" data-aos="fade-up" data-aos-duration="600" alt="gallery image" />
             <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="~/res/media/img/4.webp" CssClass="gallery-img" OnClick="ImageButton5_Click" data-aos="fade-up" data-aos-duration="200" alt="gallery image" />
@@ -561,8 +591,8 @@
                 </div>
             </div>
         </div>
-        <%--trainer--%> 
-        <div class="mentor mentor-direction-right"  data-aos="fade-up" data-aos-duration="200">
+        <%--trainer--%>
+        <div class="mentor mentor-direction-right" data-aos="fade-up" data-aos-duration="200">
             <div class="image">
                 <img src="../res/media/img/mentor%201.webp" alt="Mr. Sushant Pathhak image" />
             </div>

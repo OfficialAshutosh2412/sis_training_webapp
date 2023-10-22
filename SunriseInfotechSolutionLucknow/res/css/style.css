@@ -15,7 +15,10 @@
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
 }
-
+.sliders{
+    width:70%;
+    margin:0 auto;
+}
 .parollax-images {
     position: fixed;
     top: 0;
@@ -268,10 +271,9 @@ input::placeholder {
     left: 0;
     z-index: 100;
     width: 100%;
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(0, 0, 0, 0.75);
-    border: 1px solid rgba(255, 255, 255, 0.125);
+    backdrop-filter: blur(8px) saturate(200%);
+    -webkit-backdrop-filter: blur(8px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.84);
 }
 
 .navbar-brand {
@@ -304,25 +306,11 @@ input::placeholder {
     height: 40px
 }
 
-.small_nav {
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(0, 0, 0, 0.75);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    width: 200px;
-    padding: 1%;
-    display: none;
-    color: white;
-}
 
-    .small_nav .nav-link:hover {
-        background: var(--hover-bg);
-        color: white !important;
-    }
+.nav-hover-link~ .nav-link:hover {
+    background: var(--hover-bg);
+    color: white !important;
+}
 
 .navbar-toggler {
     border-radius: 10%;
@@ -330,15 +318,32 @@ input::placeholder {
     cursor: pointer;
     font-weight: bolder;
 }
-
-.icon {
-    background: var(--hover-bg) !important;
-    padding: 3px 8px;
-    font-size: 1rem;
-    color: white;
-    border-radius: 3px;
-    font-weight: bolder;
+.fixed-navbar{
+    background:var(--hover-bg);
+    width:fit-content;
+    position:fixed;
+    z-index:10000;
+    top:150px;
+    border-radius:0px 10px 10px 0px;
 }
+    .fixed-navbar .nav-link {
+        transition: 0.2s all ease-in-out;
+    }
+    .fixed-navbar .nav-link:hover{
+        background:var(--hover-bg);
+        color:white;
+    }
+    .fixed-navbar li{
+        font-size:1.3rem;
+    }
+    .icon {
+        background: var(--hover-bg) !important;
+        padding: 3px 8px;
+        font-size: 1rem;
+        color: white;
+        border-radius: 3px;
+        font-weight: bolder;
+    }
 
     .icon:hover + .small_nav {
         display: block;
@@ -381,21 +386,22 @@ input::placeholder {
     -ms-flex-align: center;
     align-items: center;
     color: white;
-    background: rgba(0,0,0,0.6);
     -webkit-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     text-align: center;
-    margin-top: 20px;
+    backdrop-filter: blur(2px) saturate(200%);
+    -webkit-backdrop-filter: blur(8px) saturate(200%);
+    background: linear-gradient(135deg,rgba(17, 25, 40, 0.84),rgb(0 0 0 / 0.83),rgba(17, 25, 40, 0.84));
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .hero-box {
     width: 100%;
 }
-
-    .hero-box img {
-        width: 200px;
-    }
+.hero-box img {
+    width: 200px;
+}
 
     .hero-box p {
         color: #e0e0e0;
@@ -457,8 +463,10 @@ input::placeholder {
 }
 
     .hero-brand label {
+        padding-left:5px;
+        margin-top:5px;
         width: 100%;
-        font-size: 2vw;
+        font-size: 1.5rem;
         text-align: center;
         font-weight: 900;
         color: transparent;
@@ -1979,6 +1987,9 @@ textarea {
 }
 /*481px — 768px: iPads, Tablets*/
 @media screen and (max-width:768px) {
+    .hero-brand label{
+        font-size:1.4rem;
+    }
     .hero-brand h1 {
         font-size: 1rem;
     }
@@ -2081,7 +2092,9 @@ textarea {
 }
 /*320px — 480px: vertical tab devices*/
 @media screen and (max-width:671px) {
-
+    .hero-brand label {
+        font-size: 1rem;
+    }
     /*about*/
     .about {
         height: auto;
@@ -2139,7 +2152,7 @@ textarea {
             width: fit-content;
         }
 
-
+        
 
     .profile {
         width: 90%;
@@ -2147,7 +2160,7 @@ textarea {
 }
 
 @media screen and (max-width:490px) {
-
+    
     /*team*/
     .member .mentor {
         margin: 0px;
@@ -2232,7 +2245,11 @@ textarea {
         text-align: center;
     }
 }
-
+@media screen and (max-width:441px){
+    .hero-brand label {
+        display:none;
+    }
+}
 @media screen and (max-width:400px) {
     .hero-brand h1 {
         display: none
