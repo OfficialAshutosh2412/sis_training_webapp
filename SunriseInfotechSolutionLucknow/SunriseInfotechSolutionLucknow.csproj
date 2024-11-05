@@ -122,6 +122,7 @@
     <Content Include="res\media\img\ethical.jpg" />
     <Content Include="res\media\img\hero-img.png" />
     <Content Include="res\media\img\icomImage\android.png" />
+    <Content Include="res\media\img\icomImage\angular.png" />
     <Content Include="res\media\img\icomImage\asp.png" />
     <Content Include="res\media\img\icomImage\cad.png" />
     <Content Include="res\media\img\icomImage\cs.png" />
@@ -131,6 +132,7 @@
     <Content Include="res\media\img\icomImage\mix.png" />
     <Content Include="res\media\img\icomImage\php.png" />
     <Content Include="res\media\img\icomImage\plc.png" />
+    <Content Include="res\media\img\icomImage\gis.png" />
     <Content Include="res\media\img\icomImage\py.png" />
     <Content Include="res\media\img\icomImage\staad.png" />
     <Content Include="res\media\img\icomImage\vlsi.png" />
