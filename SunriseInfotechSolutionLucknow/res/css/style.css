@@ -344,20 +344,28 @@ input::placeholder {
         border-radius: 3px;
         font-weight: bolder;
     }
-
-    .icon:hover + .small_nav {
-        display: block;
+#icon{
+    cursor:pointer
+}
+.navigation-bar {
+    position: fixed;
+    background: var(--hover-bg);
+    padding:10px;
+    top: 70px;
+    right: 5px;
+    z-index:1000;
+    border-radius:5px;
+    box-shadow:0px 0px 21px 1px black;
+}
+    .navigation-bar.hidden-menu{
+        display:none
     }
-
-.small_nav:hover {
-    display: block;
-}
-/*title*/
-.title {
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-}
+    /*title*/
+    .title {
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+    }
 
     .title span:nth-of-type(1) {
         background: var(--hover-bg);
